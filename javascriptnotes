@@ -1,0 +1,303 @@
+declare variables 
+
+a) caught to be 5*5
+b) ten to 10
+c) mood to light . then change it to dark. 
+d) luigisDebt to 140
+e) one to 1 and two to 2 and print the result of addition, substraction and multiplication.
+
+Strings.
+-------
+Strings are to be in quotes. 
+Declare 3 variables 
+a) Down on the 	sea
+b) Lie on the ocean
+and 
+c) Float on the ocean. 
+Use single ', ` and " as part of the solution.
+
+Print the following. Use newline as part of the solution.
+
+This is the first line
+And this is the second
+
+produce concatenate by adding 
+con, cat, e and  nate. 
+
+using template literal produce result of 
+half of 100 and print the half value. 
+
+Print the type of 4.5 and value x. 
+
+compare Aardvark with Zoroaster
+compare Itchy with scracthy using == and != 
+
+Do the following things.
+"5" - 1 and
+"5" + 1
+"five" * 2
+0 is false in java script. 
+
+use or operator to print null or user.
+Agnes or user. 
+
+Logical operators. 
+==================
+use == and > for 1+1 comapred to 2 and 10 greater than 50.
+
+
+Bindings
+==========
+use let as part of the solution and not var.
+
+declare caught to be 5*5
+declare let to be 10 and print 100 using multiplication.
+declare mood to be light and then print dark and print mood to both times. 
+declare luigisDebt to 140 and subtract 35 and print it
+delcare one to be 1 and two to be 2 and print the addition . 
+
+
+const is constant 
+delcare greeting as constant to be Hello and print Hello Adya. Adyas should be
+declared as a variable.
+Find minimum of 2 and 4 and maximum of 2 and 4.
+
+Functions
+-------------
+using math function, print minimum of 2 and 4. Then print the maximum of 2 and 4. 
+
+const readline = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+
+Conditional expressions . Use Number.isNan method. 
+
+declare theNumber to be 1 and print the square root of the number. 
+Your number is the square root of theNumber.
+Otherwise 
+Print Why didn't give me a number?
+
+For now use the following method.
+declare num to be 10.
+
+if num < 10 print Small.
+num < 100 print Medium. 
+otherwise print Large. 
+
+while loop.
+use while loop to print numbers between 0 to 12. 
+
+declare result to be 1.
+declare counter to be 0.
+
+within the loop multiply result to be result * 2. Loop 10 times.
+and then print the result. Answer should be 1024
+
+Using a for loop print the number from 0 to 12. 
+
+using a for loop print the result *2 and lopp 10 times to get the answer. 
+
+Get the input from keyboard on What is the weather like? 
+Use switch and case. 
+
+if rainy print Remember to bring an umbrella.
+if sunny print Dress lightly.
+if cloudy  print Go Outside.
+if none of the above, print Unknown weather type!
+
+
+Looping a Triangle
+Write a loop that makes seven calls to console.log to output the following triangle:
+
+#
+##
+###
+####
+#####
+######
+#######
+
+
+Functions
+----------
+a) Write a function square that returns the square of the number. 
+b) Write a function makeNoise that writes "Pling!" 
+c) Write a function power that return the power of 2. 
+power(2, 10) = 1024
+power(2,3) = 8
+power(4,2) = 16
+
+d) 
+declare a variable x as "outside"
+create two functions and change variables to "Inside f1" and Inside f2"
+
+
+Functions within a function. 
+Write a function landscape that printbelow. 
+Use inner functions for the solution.
+
+
+___/''''\______/'\_
+
+My soolution.
+___/''''\_______/'\_
+
+____/''''\_______/'\
+
+
+
+Functions as Values
+------------------
+Declare a function and assign it to variable launchMissiles. The function should print "Launch Now!"
+then delcare a safeMode variable and if safeMode is true. reassign the varaiable to a function tha prints cancel launch.
+
+Test it
+
+
+Optional Arguments
+-------------
+write a function power which takes base and exponent as arguments. 
+if exponent is undefined assign it to two. 
+
+Closure
+---------
+Write a function wrapValue(n) which returns another function with the argument passed into wrapValue
+
+Write a function multipler(factor) which turns function that returns factor *number. number is taken
+as input into a function that is being returned.
+
+var twice = multiplier(2);
+console.log(twice(5)); 
+value should be 10
+
+
+Recursive Functions
+-------------------
+Rewrite power function using recursive solution.
+Write a function findSolution. which can get to a target either by adding 3 or multiplying by 5. 
+findSolution takes target to get to the solution. and should print history.
+
+
+function power(base, exponent) {
+    if (exponent == 0) {
+        return 1;
+    }else {
+        return base * power(base, exponent-1);
+}
+
+Refactoring
+-------
+function printFarmInventory(cows, chickens) {
+    var cowString = String(cows);
+    while (cowString.length < 3)
+      cowString = "0" + cowString;
+    console.log(cowString + " Cows");
+    var chickenString = String(chickens);
+    while (chickenString.length < 3)
+      chickenString = "0" + chickenString;
+    console.log(chickenString + " Chickens");
+  }
+  printFarmInventory(7, 11);
+
+Refactor the above function
+and make sure that it easily accomodates pigs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+user id : apulijala75
+Password : Dattatreya2
+Secure Number: 534553
+Childhood Nickname : Buddu
+Model of first car : Honda
+Place of Brith : Hyderabad
+
+
+
+
+
+
+Eloquent JavaScript, 2nd Edition
+Learning Node.js Development
+
+
+
+https://www.amazon.co.uk/UNIX-Users-Interactive-Workbook/dp/0130998206/ref=sr_1_1?keywords=Unix+users+interactive+workbook&qid=1569434695&sr=8-1
+
+https://www.amazon.co.uk/Advanced-UNIX-Users-Interactive-Workbook/dp/0130854565/ref=sr_1_2?keywords=Unix+users+interactive+workbook&qid=1569434735&sr=8-2
+
+UNIX System Administrator's Interactive Workbook (UNIX Interactive Workbook) 
+https://www.amazon.co.uk/UNIX-System-Administrators-Interactive-Workbook/dp/0130813087/ref=sr_1_7keywords=unix+administration+interactive+workbook&qid=1569434789&sr=8-7
+
+
+for me to do.
+--------
+https://www.amazon.co.uk/Network-Administrators-Interactive-Workbook-Workbooks/dp/013020790X/ref=sr_1_fkmr0_1?keywords=Unix+users+interactive+workbook&qid=1569434735&sr=8-1-fkmr0
+
+which code. 
+
+/usr/bin/code
+/home/arvind/nodesoftware/node-v10.16.3-linux-x64/share/doc/node
+/home/arvind/nodesoftware/node-v10.16.3-linux-x64/bin/node
+
+Getting intellisense in node application.
+
+https://code.visualstudio.com/docs/nodejs/nodejs-tutorial
+npm install -g express-generator
+
+Get Programming with Node.js
+debugger.
+https://itnext.io/the-absolute-easiest-way-to-debug-node-js-with-vscode-2e02ef5b1bad
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+break case catch continue debugger default delete
+do else false finally for function if implements
+in instanceof interface let new null package private
+protected public return static switch throw true
+try typeof var void while with yield this. 
+
+
+
+Eloquent JavaScript, 2nd Edition
+Learning Node.js Development (do Node in javascript)
+Amazon Web Services in Action, Second Edition
+
+
+
+
+
+
+
+
+
+

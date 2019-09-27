@@ -216,9 +216,25 @@ String properties .
 toUpperCase()
 typeof
 
+Arrays
+----
+push, pop
+
+
+
 declare doh to be Doh and print the upper case and type of doh
+declare a squence to be 1 2 and 3.
+add 4 and 5 at the end and remove 5. Print after both the operations.
 
+Objects
+--------
+Declare an object with {} syntax. Key and value pairs are separated using colon : .
 
+Declare a object day1 whose object properties are 
+a) squirrel, 
+b) events which is a list of work, touched tree pizza and running. 
+
+print the squirrel object and second element of the events. 
 
 
 

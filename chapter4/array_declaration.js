@@ -7,3 +7,12 @@ console.log("length of list of number using dot notation is " + list_of_numbers.
 
 let doh = "Doh";
 console.log("value of doh in upper case is " + doh.toUpperCase());
+console.log("value of doh in upper case is " + typeof(doh.toUpperCase()));
+
+let sequence = [1,2,3];
+sequence.push(4);
+console.log(sequence);
+sequence.push(5);
+console.log(sequence);
+sequence.pop();
+console.log(sequence);

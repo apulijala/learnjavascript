@@ -233,8 +233,11 @@ Declare an object with {} syntax. Key and value pairs are separated using colon 
 Declare a object day1 whose object properties are 
 a) squirrel, 
 b) events which is a list of work, touched tree pizza and running. 
-
 print the squirrel object and second element of the events. 
+c) declare an object called descriptions which have properties work (Went to Work) and touched tree (Touched a tree)
+print both the values. 
+
+
 
 
 

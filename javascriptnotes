@@ -359,6 +359,16 @@ JSON.stringify and JSON.parse
 
 
 
+
+
+        console.log("Before Swap");
+        console.log(arrToReverse[i]); 
+        console.log(arrToReverse[j]); 
+
+ 
+        console.log("After Swap");
+        console.log(arrToReverse[i]); 
+        console.log(arrToReverse[j]); 
              
             
 

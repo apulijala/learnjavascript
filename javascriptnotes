@@ -204,6 +204,10 @@ function printFarmInventory(cows, chickens) {
 Refactor the above function
 and make sure that it easily accomodates pigs
 
+Chapter 4 Arrays
+-----------------
+Declare an array of 2, 3, 5, 7, 11 and print third and first element. 
+
 
 
 

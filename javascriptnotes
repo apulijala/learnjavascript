@@ -279,7 +279,26 @@ if an entry of journal contains an event. then
 
 includes is a method, that checks to see if the includes include a particualr string. 
 
+table)
 Use the table of an array of objects and collect all the events and there should not any duplicates. 
+Do it using two different ways. One using the array index and another using of operator.
+
+Array methods.
+shift, unshift, slice, indexOf, lastIndexOf
+
+0, 1, 2, 3, 4 . Get elemnts 2, 3 and 4 from an array.
+
+0, 1, 2, 3, 4. Get elemnts from 2 onwards. 
+
+write a method remove that which removes an element at index (index) from an array. 
+test it by using Remove c "a", "b", "c", "d", "e" 
+
+to the tasks returned in 
+
+
+for the problem above. add a task in the beginning and remove one from the beginning. 
+
+Strings and Their Properties
  
 
 

@@ -10,8 +10,13 @@ function range(low, high, step) {
 }
 
 function reverseArrayInPlace(arrToReverse) {
-    for (var i = 0; i < arrToReverse;i++) {
 
+    arrToReverse = new Array(arrToReverse);
+    for (var i=0,j= arrToReverse.length -1; i <arrToReverse.length,j>= 0; i++,j--) {
+        console.log("Before Swap");
+        temp = arrToReverse[i];
+        arrToReverse[i] - arrToReverse[j];
+        arrToReverse[j] =temp;
     }
     return arrToReverse;
 }
@@ -26,7 +31,7 @@ console.log(reversedArray);
 originalArray = ["hello", "world", "enough", "there"];
 console.log("Original Array is " );
 console.log(originalArray);
-reversedArray = reverseArrayInPlace();
+var reversedArray = reverseArrayInPlace(originalArray);
 console.log("Reversed array is ");
 console.log(reversedArray);
 

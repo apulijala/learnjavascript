@@ -275,10 +275,12 @@ value is from the value that is passed.
 
 write a function tableFor(event, journal)  that does the following. 
 declare a table to be 0,0,0,0
+if an entry of journal contains an event. then 
 
 includes is a method, that checks to see if the includes include a particualr string. 
 
-
+Use the table of an array of objects and collect all the events and there should not any duplicates. 
+ 
 
 
 

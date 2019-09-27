@@ -15,11 +15,10 @@ function tableFor(event, journal) {
     for (let i = 0; i < journal.length; i++) {
 
       let entry = journal[i], index = 0;
-      
       if (entry.events.includes(event)) index += 1;
-      
       if (entry.squirrel) index += 2;
-            table[index] += 1;
+      console.log(" Index is " + index);
+      table[index] += 1;
     }
     return table;
   }

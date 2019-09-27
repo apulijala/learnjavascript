@@ -9,15 +9,19 @@ addEntry(["weekend", "cycling", "break", "peanuts",  "beer"], true);
 
 function collect_all_evetns() {
     let events = [];
+    for (let tt of journal) {
+        console.log( tt);
+    }
+ 
     for (var i = 0; i < journal.length; i++) {
         for (var j = 0; j < journal[i].events.length; j++) {
-
-            if (!events.includes(journal[i][j])  ) {
-
+            if (!events.includes(journal[i].events[j])  ) {
+                    events.push(journal[i].events[j]);
             }
-            console.log(" events are " + journal[i].events[j]);
         }
     }
-
+    return events;
 }
-collect_all_evetns();
+var uniuqEvents = collect_all_evetns();
+console.log("Unique events are  " + uniuqEvents);
+

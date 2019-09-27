@@ -293,7 +293,8 @@ shift, unshift, slice, indexOf, lastIndexOf
 write a method remove that which removes an element at index (index) from an array. 
 test it by using Remove c "a", "b", "c", "d", "e" 
 
-to the tasks returned in 
+to the tasks returned in table. add a task called "Worker task" in the beginning 
+and then remove ti. Print the array both tiems. 
 
 
 for the problem above. add a task in the beginning and remove one from the beginning. 

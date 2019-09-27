@@ -209,8 +209,14 @@ Chapter 4 Arrays
 Declare an array of 2, 3, 5, 7, 11 and print third and first element. 
 
 
+Properties. 
+print the length of the above array using dot operator and square bracket operator.
 
+String properties . 
+toUpperCase()
+typeof
 
+declare doh to be Doh and print the upper case and type of doh
 
 
 

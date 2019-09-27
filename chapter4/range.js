@@ -10,37 +10,32 @@ function range(low, high, step) {
 }
 
 function reverseArrayInPlace(arrToReverse) {
-
     j = arrToReverse.length -1;
-    for (var i=0,j= arrToReverse.length -1;
-             i <arrToReverse.length,j>= 0; 
-             i++,j--) {
-         
-        console.log(arrToReverse[i] + " " + arrToReverse[j]);
+    for (var i=0; i < arrToReverse.length/2; i++) {
+
         temp = arrToReverse[i];
         arrToReverse[i] = arrToReverse[j];
         arrToReverse[j] =temp;
-        console.log(arrToReverse[i] + " " + arrToReverse[j]);
-       
+        j--
     }
-    console.log("Reversed array is " + arrToReverse);
     return arrToReverse;
 }
 
 var originalArray = ["hello", "world", "enough"];
-// console.log("Original Array is " );
-// console.log(originalArray);
+console.log("Original Array is " );
+console.log(originalArray);
 var reversedArray = reverseArrayInPlace(originalArray);
-//console.log("Reversed array is ");
-// console.log(reversedArray);
+console.log("Reversed array is ");
+console.log(reversedArray);
 
-originalArray = ["hello", "world", "enough", "there"];
-// console.log("Original Array is " );
-// console.log(originalArray);
+// Now Reversing the original array.
+
+var originalArray = ["hello", "world", "enough", "there"];
+console.log("Original Array is " );
+console.log(originalArray);
 var reversedArray = reverseArrayInPlace(originalArray);
-// console.log("Reversed array is ");
-//  console.log(reversedArray);
-
+console.log("Reversed array is ");
+console.log(reversedArray);
 
 
 // numbers must be an array.

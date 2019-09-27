@@ -259,8 +259,15 @@ events as "weekend", "cycling", "break", "peanuts",  "beer" and squirrel as true
 Declare object1 to have value 10
 assign objec2 to object 1.
 Test == operator on object2 and object1.
-
 declare object3 (don't assign) to be as same as objec1 and test the equality operator.
+
+delcare score to be an object (as constant score) having visitors (value is 0) and home (value is 0). 
+reassign visitors to 1.
+
+try to reassign score and then see the result.
+
+
+
             
 
              

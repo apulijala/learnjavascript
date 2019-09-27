@@ -254,6 +254,13 @@ First entry in an object is
 events as "work", "touched tree", "pizza", "running", "television" and squirrel to be false.
 events as "work", "ice cream", "cauliflower", "lasagna", "touched tree", "brushed teeth" and squirrel as false.
 events as "weekend", "cycling", "break", "peanuts",  "beer" and squirrel as true.
+
+
+Declare object1 to have value 10
+assign objec2 to object 1.
+Test == operator on object2 and object1.
+
+declare object3 (don't assign) to be as same as objec1 and test the equality operator.
             
 
              

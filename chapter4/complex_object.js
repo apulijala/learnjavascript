@@ -15,4 +15,9 @@ var complexObject = [{
 console.log("Third squirrel using . operator is  " + complexObject[2].squirrel);
 console.log("Third squirrel using square bracket is  " + complexObject[2]["squirrel"]);
 
-console.log("Second squirrel's third event is  " + complexObject[1]["events"] );
+console.log("Second squirrel's third event using square brakcet operator is " + 
+    complexObject[1]["events"][2] );
+
+console.log("Second squirrel's third event using dot operator is " + 
+    complexObject[1].events[2] );
+

@@ -348,6 +348,8 @@ let {name} = {name: "Faraji", age: 23};
 Did  not understand this at all.
 [n00, n01, n10, n11] is an array notation that can be used to bind parameters of array. 
 
+JSON.stringify and JSON.parse
+
 
 
 

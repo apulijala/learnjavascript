@@ -326,6 +326,30 @@ Secretarybirds. specialize. in. stomping
 
 LA (make it to LALALA)
 
+REST Parameters. Variable number of arguments 
+----
+Write a functiont that takes variable number of araguments and finds 
+the maximum of numbers. 
+function name is called max
+give the solution using the variable numebr of parameters. 
+
+max(4, 1, 9, -2) the result is 9
+Function that takes variable number of arguments should have ...
+and if you inoking function with an array you need to used ...
+
+Math Object is 
+-------------
+Math.random()
+Math.ceil()
+Math.floor()
+
+let {name} = {name: "Faraji", age: 23};
+
+Did  not understand this at all.
+[n00, n01, n10, n11] is an array notation that can be used to bind parameters of array. 
+
+
+
 
 
 

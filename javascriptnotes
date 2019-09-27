@@ -270,6 +270,18 @@ try to reassign score and then see the result.
 Solve the problem declare an array of objects using a function. 
 called addEntry 
 Figure out the parameters yourself. It should be in any array called journal.
+When added without : operator and specifying value, name ia automatically from the variable name and
+value is from the value that is passed. 
+
+write a function tableFor(event, journal)  that does the following. 
+declare a table to be 0,0,0,0
+
+includes is a method, that checks to see if the includes include a particualr string. 
+
+
+
+
+
 
 
 table[3] * table[0] - table[2] * table[1]) /

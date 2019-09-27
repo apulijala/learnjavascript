@@ -300,17 +300,38 @@ and then remove ti. Print the array both tiems.
 for the problem above. add a task in the beginning and remove one from the beginning. 
 
 Strings and Their Properties
- 
+--------
+slice will not remove as with arrays. 
+indexOf operator defines the occurence of the stirng staarting position.
+trim removes whitespaces. 
+padStart will add 'any character' to the String.  
+String(6).padStart(3, "0")
+3 = total length. "0" string to be added. 
+split will split the String into an array. 
+repeat(n) will repeat the string 
+join will join an array into a string.  
+
+
+examples
+coconunts . Use function to get nut
+one two three. Find the occurence of ee.
+"   okay" . Rmove the white spaces. 
+For String 6 make it to 006
+
+Secretarybirds specialize in stomping
+Get all arrays of words 
+
+Conver the array back to string. 
+Secretarybirds. specialize. in. stomping
+
+LA (make it to LALALA)
 
 
 
 
 
-table[3] * table[0] - table[2] * table[1]) /
-    Math.sqrt((table[2] + table[3]) *
-              (table[0] + table[1]) *
-              (table[1] + table[3]) *
-              (table[0] + table[2]));           
+
+
 
              
             

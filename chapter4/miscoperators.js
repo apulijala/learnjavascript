@@ -16,3 +16,6 @@ console.log("After removing Horse Racing");
 var taskRemoved = tasks.shift();
 console.log(tasks);
 console.log("Task removeds is " + taskRemoved);
+var myCoco = "coconuts";
+console.log(myCoco.slice(2,4));
+console.log(myCoco);

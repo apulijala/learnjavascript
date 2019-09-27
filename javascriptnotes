@@ -237,6 +237,10 @@ print the squirrel object and second element of the events.
 c) declare an object called descriptions which have properties work (Went to Work) and touched tree (Touched a tree)
 print both the values. 
 
+in binary operator. returns if a property is in object or not.
+delcare an object with left as 1 and right as 2. and then print the values. 
+use in operator to test if the properties exist
+
 
 
 

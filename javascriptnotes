@@ -241,6 +241,23 @@ in binary operator. returns if a property is in object or not.
 delcare an object with left as 1 and right as 2. and then print the values. 
 use in operator to test if the properties exist
 
+Object.keys will return all the keys of the Object as an array. 
+Print the keys of the object {x: 0, y: 0, z: 2}
+Object.assign will copy all the properties from one object to another. 
+
+declare an objectA to be a (1) and b(2) 
+copy this object {b: 3, c: 4}); to objectA and then print the values. 
+
+Declare an array of objects. 
+
+First entry in an object is 
+events as "work", "touched tree", "pizza", "running", "television" and squirrel to be false.
+events as "work", "ice cream", "cauliflower", "lasagna", "touched tree", "brushed teeth" and squirrel as false.
+events as "weekend", "cycling", "break", "peanuts",  "beer" and squirrel as true.
+            
+
+             
+            
 
 
 

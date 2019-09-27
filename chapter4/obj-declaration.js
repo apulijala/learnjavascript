@@ -32,6 +32,16 @@ console.log( "Is left in description ? " + leftInDescription);
 delete description["right"];
 var rightDescription = "right" in description;
 console.log( "Is right in description ? " + rightDescription);
+console.log("Keys of the object are " + Object.keys({x : 0, y: 1, z : 2}) );
+
+objectA = {a : 1, b: 2};
+console.log("Object a is ");
+console.log( objectA);
+
+Object.assign(objectA, {b : 3, c: 4});
+console.log(objectA);
+
+
 
 
 

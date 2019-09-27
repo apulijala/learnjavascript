@@ -249,6 +249,7 @@ declare an objectA to be a (1) and b(2)
 copy this object {b: 3, c: 4}); to objectA and then print the values. 
 
 Declare an array of objects. 
+--------------
 
 First entry in an object is 
 events as "work", "touched tree", "pizza", "running", "television" and squirrel to be false.
@@ -266,9 +267,16 @@ reassign visitors to 1.
 
 try to reassign score and then see the result.
 
+Solve the problem declare an array of objects using a function. 
+called addEntry 
+Figure out the parameters yourself. It should be in any array called journal.
 
 
-            
+table[3] * table[0] - table[2] * table[1]) /
+    Math.sqrt((table[2] + table[3]) *
+              (table[0] + table[1]) *
+              (table[1] + table[3]) *
+              (table[0] + table[2]));           
 
              
             

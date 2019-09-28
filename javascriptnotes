@@ -373,8 +373,16 @@ The function returned should have another variable which does the comparision.
 
 Signature is greaterThan(n)
 
-Write a function called noisy. 
-Return another function. 
+Write a function called noisy which should 
+return another function which should take variable number of arguments. 
+The returned function should first print
+args that calling function was called with. 
+and finally log the args and the result. 
+
+calling with
+noisy(Math.min)(3, 2, 1);
+// → calling with [3, 2, 1]
+// → called with [3, 2, 1] , returned 1
 
 
 

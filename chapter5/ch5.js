@@ -36,9 +36,11 @@ console.log("Is 11 greater than 11 ? ");
 greaterThan = greaterThan10(11);
 console.log(greaterThan);
 
+function noisy(f) {
+    return (...args) => {
+            console.log("Calling with " + args);
+    }
+}
 
-
-
-
-
+noisy(Math.min)(101, 345, 78, 90);
 

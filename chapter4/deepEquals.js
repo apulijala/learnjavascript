@@ -32,9 +32,9 @@ function deepEquals(obj1, obj2) {
                     return false;
             }
         }
-        return true;
+        
     }
-    return false;
+    return true;
 }
 
 
@@ -99,4 +99,12 @@ var secondObject7 = {x : {l : 4, m : 2}, z: {y: 4}};;
 console.log(firstObject7);
 console.log(secondObject7);
 result = deepEquals(firstObject7, secondObject7);
+console.log(result);
+
+
+var firstObject8= {x : {l : 4, m : {n : [4,5,6,8]}}, z: {y: 3}};
+var secondObject8 = {x : {l : 4, m : {n : [4,5,6]}}, z: {y: 3}};
+console.log(firstObject8);
+console.log(secondObject8);
+result = deepEquals(firstObject8, secondObject8);
 console.log(result);

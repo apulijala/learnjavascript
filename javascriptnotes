@@ -393,6 +393,31 @@ use repeat to produce output.
 
 use forEach to print A and B which are in array.
 
+https://eloquentjavascript.net/code#5
+From now on you can only pracitce using coding sandbox. See link above
+
+{
+   name: "Coptic",
+   ranges: [[994, 1008], [11392, 11508], [11513, 11520]],
+   direction: "ltr",
+   year: -200,
+   living: false,
+   link: "https://en.wikipedia.org/wiki/Coptic_alphabet"
+}
+
+write a function filter which takes all the scripts in an array and returns all the living scripts.
+function should be higher order function. 
+function filter(array, test)  {
+
+
+}
+
+
+
+
+
+
+
 
 
 

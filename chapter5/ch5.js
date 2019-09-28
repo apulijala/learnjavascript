@@ -39,8 +39,11 @@ console.log(greaterThan);
 function noisy(f) {
     return (...args) => {
             console.log("Calling with " + args);
+            let result = f(...args);
+            console.log("Called with " + args + ", result is " + result);
     }
 }
 
 noisy(Math.min)(101, 345, 78, 90);
+
 

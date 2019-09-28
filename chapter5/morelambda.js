@@ -17,3 +17,15 @@ function filter(array, test) {
     }
     return passed;
 }
+
+function map(array, transform) {
+    let transformed = [];
+    for (element of array) {
+
+        transformed.push(transform(element));
+    }
+    return transformed;
+}
+
+
+map(SCRIPTS, script => script.name);

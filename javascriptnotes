@@ -411,6 +411,52 @@ function filter(array, test)  {
 
 
 }
+Array also has inbuilt filter method.
+
+Transforming with map.
+--------------
+write a function map. that gets the name of the scripts in an array. should be written as 
+a shigher order fucntion. 
+with signature.
+function map(array, transform);
+transform is a function that transforms elements of an array.
+
+solve the same using map operator on an array.
+
+write code that filters the scripts using rtl and gets the names of those scripts.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

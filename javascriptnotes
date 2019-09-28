@@ -425,10 +425,16 @@ solve the same using map operator on an array.
 
 write code that filters the scripts using rtl and gets the names of those scripts.
 
-write a reduce function. 
+write a reduce function. This should emulate normal reduce opeartion.
 which has the following format 
 
 function reduce(array, combine, start)
+
+Find the script with highest numebr of characters. ranges give the number of characters in each range.
+
+
+
+
 
 
 

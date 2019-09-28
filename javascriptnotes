@@ -367,6 +367,16 @@ produce a result like the one below.
 
 ["Unit 1", "Unit 2", "Unit 3", "Unit 4", "Unit 5"]
 
+Return another function.
+Write a function greaterThan which returns a function. 
+The function returned should have another variable which does the comparision. 
+
+Signature is greaterThan(n)
+
+Write a function called noisy. 
+Return another function. 
+
+
 
 
 

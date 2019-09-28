@@ -425,6 +425,11 @@ solve the same using map operator on an array.
 
 write code that filters the scripts using rtl and gets the names of those scripts.
 
+write a reduce function. 
+which has the following format 
+
+function reduce(array, combine, start)
+
 
 
 

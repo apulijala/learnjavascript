@@ -350,27 +350,27 @@ Did  not understand this at all.
 
 JSON.stringify and JSON.parse
 
+Chapter 5
+----------
+
+function repeat . 
+
+This function will repeat action n number of times. 
+action can be any function.
+
+It should take two arguments, the numebr of arguments and the input function
+should take atleast one parameter. 
+
+
+After the function is done. 
+produce a result like the one below. 
+
+["Unit 1", "Unit 2", "Unit 3", "Unit 4", "Unit 5"]
 
 
 
 
 
-
-
-
-
-
-
-        console.log("Before Swap");
-        console.log(arrToReverse[i]); 
-        console.log(arrToReverse[j]); 
-
- 
-        console.log("After Swap");
-        console.log(arrToReverse[i]); 
-        console.log(arrToReverse[j]); 
-             
-            
 
 
 

@@ -384,6 +384,16 @@ noisy(Math.min)(3, 2, 1);
 // → calling with [3, 2, 1]
 // → called with [3, 2, 1] , returned 1
 
+Write a function unless that takes two parameters. 
+test and function called then. function called then is executed if test is false.
+use repeat to produce output.
+
+// → 0 is even
+// → 2 is even
+
+use forEach to print A and B which are in array.
+
+
 
 
 

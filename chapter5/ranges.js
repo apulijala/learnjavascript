@@ -14,7 +14,7 @@ scripts = [script1, script2];
 function characterScript(characterCode) {
     for (script of scripts) {
         if (script.ranges.some(
-            
+
             ([from, to]) => {
                  return characterCode > from && characterCode < to;
             }
@@ -27,4 +27,15 @@ function characterScript(characterCode) {
 }
 console.log(characterScript(85));
 
+function countBy(items, groupName) {
+    
+    let counts = [];
+    for (var item of items) {
 
+    }
+
+
+
+}
+
+console.log(countBy([1, 2, 3, 4, 5], n => n > 2));

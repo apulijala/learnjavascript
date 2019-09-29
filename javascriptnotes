@@ -434,6 +434,19 @@ Find the script with highest numebr of characters. range property give the numbe
 
 use some operator to find a script whose code is 121 which lies between from and to.
 
+Write a function countBy which takes an array and splits it into two groups, according to a function/lambda expression. 
+function/lambda expression returns true or false. 
+
+function signature 
+
+function countBy(items, groupName)
+console.log(countBy([1, 2, 3, 4, 5], n => n > 2));
+// → [
+      {name: false, count: 2}, 
+      {name: true, count: 3}
+]
+
+
 
 
 

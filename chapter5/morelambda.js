@@ -26,6 +26,4 @@ function map(array, transform) {
     }
     return transformed;
 }
-
-
 map(SCRIPTS, script => script.name);

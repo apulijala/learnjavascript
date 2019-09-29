@@ -29,13 +29,18 @@ console.log(characterScript(85));
 
 function countBy(items, groupName) {
     
-    let counts = [];
-    for (var item of items) {
-
+    let result = [];
+    for (item of items) {
+        name = groupName(item);
+        var i = result.findIndex( arg => arg.name == name );
+        if (i < 0) {
+            result.push({name : name , count : 1});
+        }else {
+            result[i].count++;
+        }
     }
-
-
-
+    return result;
 }
+
 
 console.log(countBy([1, 2, 3, 4, 5], n => n > 2));

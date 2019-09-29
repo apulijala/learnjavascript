@@ -430,7 +430,9 @@ which has the following format
 
 function reduce(array, combine, start)
 
-Find the script with highest numebr of characters. ranges give the number of characters in each range.
+Find the script with highest numebr of characters. range property give the number of characters in each range.
+
+use some operator to find a script whose code is 121 which lies between from and to.
 
 
 

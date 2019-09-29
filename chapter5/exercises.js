@@ -24,3 +24,23 @@ console.log(flattenWithConcat(arrays));
 console.log("In reduction");
 var finalresult = arrays.reduce((flat, current ) => flat.concat(current), []);
 console.log(finalresult);
+
+function every(array, test) {
+    // Your code here.
+    var result = true;
+    for (var item of array) {
+        if (!test(item)) {
+            return false;
+        }
+    }  
+    return result;
+  }
+  
+  console.log(every([1, 3, 5], n => n < 10));
+  // → true
+  console.log(every([2, 4, 16], n => n < 10));
+  // → false
+  console.log(every([], n => n < 10));
+  // → true
+
+

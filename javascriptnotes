@@ -490,7 +490,7 @@ properties of hungryRabbit
 type  = "Hungry"
 spaek
 
-whiteRabbit.speak("Oh my ears and whiskers, " +
+whiteRabbit.speak("Oh my ears and whiskers, " +late it's getting!
                   "how late it's getting!")
 Should print out . 
 // → The white rabbit says 'Oh my ears and whiskers, how

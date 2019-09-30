@@ -27,5 +27,3 @@ console.log(temp.celsius);
 
 temp = Temperature.fromFahrenheit(100);
 console.log(temp.celsius);
-/*
-*/

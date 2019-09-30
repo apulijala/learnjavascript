@@ -645,6 +645,20 @@ Inheritence.
 
 Declare SymmetricMatrix
 class SymmetricMatrix.
+symmetric matrix must have same size. 
+setter must set which follows the rules.
+and a constructor 
+
+if (x < y) return element(y, x);
+      else return element(x, y); do this in constructor.
+
+The instance of operator.
+-----------------------
+test SymmetricMatrix(2) is it of SymmetricMatrix type
+SymmetricMatrix(2) is it  of Matrix type.
+Matrix(2, 2) is it of type SymmetricMatrix
+
+
 
 
 

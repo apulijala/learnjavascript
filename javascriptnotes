@@ -550,7 +550,17 @@ The killer rabbit says 'SKREEEE!'
 Class Notation:
 -------------
 
+Declare a class Rabbit, with exactly same behaviour as before. 
+constructor should take type and this class should have  a method called as speak.
 
+
+delcare an object which takes class as right hand parameter (as an expression)
+which has a method called getWord which should return hello.
+
+var object = new class{...};
+
+Overriding Derived Prooperties.
+-------------------
 
 
 

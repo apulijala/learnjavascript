@@ -605,6 +605,9 @@ and toString is rpesent.
 
 
 Polymorphism
+--------------
+for an array [1,2,3] declare a toString method using symbol that should print 
+length cm of blue yarn.
 
 
 

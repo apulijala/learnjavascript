@@ -577,6 +577,24 @@ console.log([1, 2].toString());
 // → 1,2
 
 
+declare the following as an object. 
+
+ages contianing following proeprties.
+
+Name
+Boris	39
+Liang	22
+Julia	62
+
+Print the following output.
+Júlia is 62
+Is Jack's age known?  false
+// → Is toString's age known? true
+
+create a Map
+for the problem above.and print the same results.
+
+
 
 
 

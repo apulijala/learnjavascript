@@ -611,29 +611,15 @@ length cm of blue yarn.
 
 The Iterator interface.
 ------------------------
+Develop a class Matrix. which takes width, height and elemnt function (elment should be initilized to undefined)
+Matrix is stored in single dimensional array. so width*3 + 2 will give second row and first column (rows and cols should start with 0)
+Develop a getter get(x,y) and set(x,y,value)
 
-class Matrix {
-  constructor(width, height, element = (x, y) => undefined) {
-    this.width = width;
-    this.height = height;
-    this.content = [];
+develop an iterator for above. 
+and test it with new Matrix(2,2, `value of ${x} and ${y}`)
 
-    // All values are assigned to undefined. 
-    for (let y = 0; y < height; y++) {
-      for (let x = 0; x < width; x++) {
-        this.content[y * width + x] = element(x, y);
-      }
-    }
-  }
-
-  get(x, y) {
-    return this.content[y * this.width + x];
-  }
-  set(x, y, value) {
-    this.content[y * this.width + x] = value;
-  }
-}
-
+Getters setters and statics
+--------------------------------
 
 
 

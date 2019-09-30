@@ -562,6 +562,45 @@ var object = new class{...};
 Overriding Derived Prooperties.
 -------------------
 
+Define Rabbit object as before and 
+then assign teeth to be Small for Rabbit.
+Alter it for blackRabbit as long, sharp, and bloody
+then print blackRabbit.teeth, 
+Create another variable called RedRabbit and print the teets. 
+
+Verify the difference in output. 
+
+console.log(Array.prototype.toString ==
+            Object.prototype.toString);
+// → false
+console.log([1, 2].toString());
+// → 1,2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

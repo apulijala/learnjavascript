@@ -543,13 +543,12 @@ console.log(Object.getPrototypeOf(Rabbit) ==
 console.log(Object.getPrototypeOf(weirdRabbit) ==
             Rabbit.prototype);
 // → true
-
-
 5) Create a class called Rabbit which takes type as a parameter.
 and has a function called speak. which should print out the line 
 The killer rabbit says 'SKREEEE!'
 
-
+Class Notation:
+-------------
 
 
 

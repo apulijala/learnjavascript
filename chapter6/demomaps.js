@@ -21,6 +21,10 @@ console.log("Is Jack's age known?", ages.has("Jack"));
 console.log("Is Julia's age known?", ages.has("Julia"));
 console.log("Is toString's age known?", ages.has("toString"));
 
+console.log({x : 1}.hasOwnProperty("x"));
+console.log({x : 1}.hasOwnProperty("toString"));
+console.log("x"in {x : 1});
+
 
 
 

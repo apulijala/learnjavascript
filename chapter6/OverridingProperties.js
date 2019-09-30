@@ -5,6 +5,8 @@ function Rabbit(type) {
 Rabbit.prototype.speak = function(line) {
     console.log(`The ${this.type} says '${line}'`);
 }
+//Overriding at class level.
+
 
 Rabbit.prototype.teeth = "Small";
 
@@ -23,3 +25,5 @@ console.log(Array.prototype.toString);
 console.log(Object.prototype.toString.call([1, 2]));
 
 console.log([1, 2].toString());
+
+console.log(redRabbit.toString());

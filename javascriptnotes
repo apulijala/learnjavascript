@@ -584,7 +584,9 @@ ages contianing following proeprties.
 Name
 Boris	39
 Liang	22
-Julia	62
+Julia	
+
+62
 
 Print the following output.
 Júlia is 62
@@ -594,6 +596,15 @@ Is Jack's age known?  false
 create a Map
 for the problem above.and print the same results.
 
+use hasOwnProperty() to test if a property is present in t
+
+declare a variable 
+{x: 1}
+and test if property x is present. 
+and toString is rpesent. 
+
+
+Polymorphism
 
 
 
@@ -601,9 +612,7 @@ for the problem above.and print the same results.
 
 
 
-
-
-
+	
 
 
 

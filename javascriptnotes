@@ -621,6 +621,16 @@ and test it with new Matrix(2,2, `value of ${x} and ${y}`)
 Getters setters and statics
 --------------------------------
 
+Write a class called Temparature 
+which should take celsius as a parameter. 
+getter method of the Temparature class should 
+return farenhit.
+setter method should take Farenheit and return celsius. 
+
+
+
+
+
 
 
 

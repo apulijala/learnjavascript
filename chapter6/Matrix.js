@@ -35,11 +35,11 @@ class MatrixIterator {
             x : this.x,
             y : this.y,
             value : this.matrix.get(this.x, this.y)
-
         }
+
         this.x++;
         if (this.x == this.matrix.width) {
-            thix.x = 0;
+            this.x = 0;
             this.y++;
         }
 
@@ -47,4 +47,11 @@ class MatrixIterator {
 
     }
     
+}
+
+Matrix.prototype[Symbol.iterator] = function() {return new MatrixIterator(this)};
+let matrix = new Matrix(2,2, (x,y) => `value of ${x} ${y}`);
+
+for (let {x,y, value } of matrix) {
+    console.log(x, y, value);
 }

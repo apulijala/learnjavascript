@@ -478,6 +478,45 @@ Sample invocation and output.
 rabbit.speak("I'm alive."); should print out 
 The rabbit says 'I'm alive.'
 
+2) delcare a speak method. The speak method should use this as part of the solution.
+function speak
+declare whiteRabbit and hungryRabbit. 
+
+properties of whiteRabbit
+type  = "White"
+spaek
+
+properties of hungryRabbit
+type  = "Hungry"
+spaek
+
+whiteRabbit.speak("Oh my ears and whiskers, " +
+                  "how late it's getting!")
+Should print out . 
+// → The white rabbit says 'Oh my ears and whiskers, how
+// late it's getting!'
+
+hungryRabbit.speak("I could use a carrot right now.");
+// → The hungry rabbit says 'I could use a carrot right now.'
+
+Note single quotes around line that was given to be printed out. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

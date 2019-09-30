@@ -627,6 +627,24 @@ getter method of the Temparature class should
 return farenhit.
 setter method should take Farenheit and return celsius. 
 
+(F-32)/9 = c/5
+F = 1.8*c + 32
+C = (F -32)/1.8
+
+output should be as follows.
+
+let temp = new Temperature(22);
+console.log(temp.fahrenheit);
+// → 71.6
+temp.fahrenheit = 86;
+console.log(temp.celsius);
+// → 30
+
+Inheritence.
+-----
+
+Declare SymmetricMatrix
+class SymmetricMatrix.
 
 
 

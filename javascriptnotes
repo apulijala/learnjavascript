@@ -445,8 +445,9 @@ Use inbuilt reduce for getting the same result.
 
 
 8) 
-To solve the problem, first write a function called characterCount which takes a script as an input, and produces 
-all characters.
+To solve the problem, first write a function called characterCount which takes a script as an input, and 
+produces a count of all characters.
+
 Find the script with highest numebr of characters. 
 range property give the number of characters in each range.
 

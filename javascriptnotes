@@ -661,6 +661,26 @@ Matrix(2, 2) is it of type SymmetricMatrix
 
 https://eloquentjavascript.net/code/#5.4
 
+To be documented.
+
+function unless(test, then) {
+  if (!test) then();
+}
+
+repeat(3, n => {
+  unless(n % 2 == 1, () => {
+    console.log(n, "is even");
+  });
+});
+// → 0 is even
+// → 2 is even
+
+let rtlScripts = SCRIPTS.filter(s => s.direction == "rtl");
+console.log(map(rtlScripts, s => s.name));
+// → ["Adlam", "Arabic", "Imperial Aramaic", ...]
+
+document testScripts
+
 
 
 

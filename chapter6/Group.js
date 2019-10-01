@@ -53,10 +53,15 @@ class GroupIterator {
         
         if (this.position >= this.group.holder.length)  return {done : true};
         let value = this.group.holder[this.position];
-        
+        this.position++;
+        return {value : value, done: false};
     }
 }
 
+Group.prototype[Symbol.iterator] = function() {
+
+    return new GroupIterator(this);
+}
 
 
 /*

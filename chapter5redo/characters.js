@@ -1161,6 +1161,7 @@ function average(array) {
 function countBy(items, groupName) {
     let result = [];
     for (item of items) {
+
         let name = groupName(item);
         let index = result.findIndex((myArg) => {return myArg.name == name});
         if (index == -1) {
@@ -1185,14 +1186,36 @@ function characterScript(code) {
                 return script;
         }
     }
-    return "none";
+    return null;
 }
 
 //  console.log(characterScript(121));
 
 function textScripts(text) {
 
+    let scripts = countBy(text,
+            char => {
+                    let script = characterScript(char.codePointAt(0));
+                    return script ? script.name : "none" ;
+            }).filter(script => script.name != "none");
+
+   let totalScripts = scripts.reduce((count, {value}) => {
+        return count + value;
+
+    }, 0);
+
+    if (totalScripts == 0 ) {
+        return "No Scripts found";
+    }
+    
+    console.log(scripts.map(
+        ({name, value} ) => {return `${Math.round( (value * 100)/totalScripts)}% of ${name} `}
+    ).join(", ")) ;
 }
 
 console.log(textScripts('英国的狗说"woof", 俄罗斯的狗说"тяв"'));
+
+let correctResult = [];
+let arrays = [[1, 2, 3], [4, 5], [6]];
+console.log(arrays.reduce((a,b) => a.concat(b), []));
 

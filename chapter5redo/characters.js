@@ -1114,11 +1114,25 @@ var SCRIPTS = [
   ];
   
 function characterCount(script) {
-    
-    
-
+    return script.ranges.reduce(
+        (count, [from, to]) => {
+            return count + (to -from);
+        }, 0);
 }
-    
-
 
 console.log(characterCount(SCRIPTS[0]));
+
+// find the script with hightest number of characters.
+
+console.log(SCRIPTS.reduce(
+    (a, b) => { 
+       return characterCount(a) > characterCount(b) ? a : b;
+    }
+));
+
+function average(array) {
+    return array.reduce((a,b) => a +b /array.length )
+}
+
+
+

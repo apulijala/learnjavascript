@@ -1162,14 +1162,37 @@ function countBy(items, groupName) {
     let result = [];
     for (item of items) {
         let name = groupName(item);
-        let index = result.indexOf(item.name == name);
+        let index = result.findIndex((myArg) => {return myArg.name == name});
         if (index == -1) {
-            result.push({name : name, value : 1});
+          result.push({name : name , value : 1});
         }else {
-            result[index].count++;
+            result[index].value++;
         }
-    }
+    }   
     return result;
 }
 
+console.log(countBy([1, 2, 3, 4, 5], n => n > 2 ));
+
+function characterScript(code) {
+    for (script of SCRIPTS) {
+        if (script.ranges.some (
+                ([from, to]) => {
+                    return  code > from  && code < to
+                }))
+         
+        {
+                return script;
+        }
+    }
+    return "none";
+}
+
+//  console.log(characterScript(121));
+
+function textScripts(text) {
+
+}
+
+console.log(textScripts('英国的狗说"woof", 俄罗斯的狗说"тяв"'));
 

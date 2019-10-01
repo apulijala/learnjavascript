@@ -1141,6 +1141,17 @@ function map(array, transform) {
 passedScripts = map(SCRIPTS, script => script.name);
 // console.log(passedScripts);
 // console.log(SCRIPTS.map(script => script.name));
+console.log(SCRIPTS.filter(script => script.direction == "ttb").map(
+    script => [script.name, script.direction]
+));
 
+passedScripts = map(SCRIPTS.filter(script => script.direction == "rtl"), 
+    (script1) => {return {script:script1.name, direction : script1.direction}});
+
+console.log("Right to left scripts");
+// console.log(passedScripts);
+console.log("Right to left scripts using map operator");
+console.log(SCRIPTS.filter(script => script.direction == "rtl").map(script => {return {script: 
+    script.name, direction : script.direction}}) );
 
 

@@ -370,27 +370,32 @@ produce a result like the one below.
 
 ["Unit 1", "Unit 2", "Unit 3", "Unit 4", "Unit 5"]
 
+2)
 Return another function.
 Write a function greaterThan which returns a function. 
 The function returned should have another variable which does the comparision. 
-
 Signature is greaterThan(n)
+test it with invocation greaterThan(10) with number as 11
 
+3) 
 Write a function called noisy which should 
-return another function which should take variable number of arguments. 
-The returned function should first print
-args that calling function was called with. 
-and finally log the args and the result. 
+return another function which can take variable number of arguments. 
+The returned function should first print arguments with which it is called.
+call the fucntion and which has been passed into it and then capture the result.
+and finally log the arguments and the result. 
 
 calling with
 noisy(Math.min)(3, 2, 1);
 // → calling with [3, 2, 1]
-// → called with [3, 2, 1] , returned 1
+// → called with [3, 2, 1] ,
+// returned 1
 
-Write a function unless that takes two parameters. 
-test and function called then. function called then is executed if test is false.
-use repeat to produce output.
+4) 
+Write a function unless that takes two parameters, both of which are functions.
+test (a function) and function called then. function called then is executed if test is false.
 
+a) 
+use repeat to produce the following output.
 // → 0 is even
 // → 2 is even
 

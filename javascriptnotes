@@ -355,7 +355,7 @@ Chapter 5
 
 function repeat . 
 
-1) This function will repeat action n number of times. 
+1) This function will repeat action n number of times on arguments 0 to n-1 
 action can be any function.
 It should take two arguments, the numebr of arguments and the input function
 should take atleast one parameter. 
@@ -438,37 +438,57 @@ which has the following format
 // combine is higher order function.
 function reduce(array, combine, start)
 
-Find the script with highest numebr of characters. range property give the number of characters in each range.
+Test it with 
+console.log(reduce([1, 2, 3, 4], (a, b) => a + b, 0));
+// → 10
+Use inbuilt reduce for getting the same result.
 
-use some operator to find a script whose code is 121 which lies between from and to.
 
-Write a function countBy which takes an array and splits it into two groups, according to a function/lambda expression. 
-function/lambda expression returns true or false. 
+8) 
+To solve the problem, first write a function called characterCount which takes a script as an input, and produces 
+all characters.
+Find the script with highest numebr of characters. 
+range property give the number of characters in each range.
 
-function signature 
+Then use the function that is developed to give the soltuion.
+Use Lambda expression for above.
+// → {name: "Han", ...}
 
-function countBy(items, groupName)
+9) 
+write a function average which gives average of all elements in an array.
+
+a) Find all living scripts and get their average year. 
+living and year are the proeprties that you will be intereseted in.
+
+b) Find all dead scripts and get their average year. 
+living and year are the proeprties that you will be intereseted in.
+
+solve both a and b using higher order functions as well as normal for loop.
+
+10) 
+Write a function characterScript(code) which returns a scirpt if the code belongs to 
+one of th ranges.  use some method for the solution above.
+
+console.log(characterScript(121));
+// → {name: "Latin", ...}
+
+11) Recognizing text.
+
+Write a function countBy(items, groupName)
+items is a character array and groupName is a higher order function. 
+
+invocation
 console.log(countBy([1, 2, 3, 4, 5], n => n > 2));
-// → [
-      {name: false, count: 2}, 
-      {name: true, count: 3}
-]
+// → [{name: false, count: 2}, {name: true, count: 3}]
 
+12) Write a function textScripts(text)
+that can summarize text with the scripts that are used.
 
-Write a higher-order function loop that provides something like a for loop statement. 
-It takes a value, a test function, an update function, and a body function. 
-Each iteration, it first runs the test function on the current loop value and stops if that returns false. 
-Then it calls the body function, giving it the current value. 
-Finally, it calls the update function to create a new value and starts from the beginning.
+console.log(textScripts('英国的狗说"woof", 俄罗斯的狗说"тяв"')); should produce the 
+following result below.
+// → 61% Han, 22% Latin, 17% Cyrillic
 
-When defining the function, you can use a regular loop to do the actual looping.
-
-Everything
-Analogous to the some method, arrays also have an every method. 
-This one returns true when the given function returns true for every element in the array.
-In a way, some is a version of the || operator that acts on arrays, and every is like the && operator.
-
-Implement every as a function that takes an array and a predicate function as parameters. Write two versions, one using a loop and one using the some method.
+Solve the exercises.
 
 
 Chapter 6

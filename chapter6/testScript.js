@@ -1126,6 +1126,7 @@ function getScriptForCharacter(codePoint) {
         return codePoint >= from && codePoint <= to;
         }))
         {   
+            
             return script.name;
         }
     }
@@ -1150,19 +1151,27 @@ function countBy(items, groupName) {
 
 // count even and odd numbers.
 let evenOdd = countBy([2,3,4,5,6,8], n => n%2 ==0);
-console.log("Even odd is ");
-console.log(evenOdd);
+// console.log("Even odd is ");
+// console.log(evenOdd);
 
 
 function textScripts(text) {
     let scripts = countBy(text, char => {
             return getScriptForCharacter(char.codePointAt(0));
-    });
-    console.log(scripts);
-}
+    }).filter(({name}) => name != "none");
 
-let script = getScriptForCharacter(101);
-// console.log(script);
+    // count the total number of scripts.
+   let totalScripts = scripts.reduce((n,{count}) => { return n + count}, 0);
+   if (totalScripts == 0) {
+        return "No Scripts Found";
+   }
+   
+   console.log(totalScripts);
+   let results = 
+    scripts.map(({name, count}) => {return `${Math.round(count*100/totalScripts)}% ${name}`}).join(", ");
+    return results;
+
+}
 
 console.log(textScripts('英国的狗说"woof", 俄罗斯的狗说"тяв"'));
 

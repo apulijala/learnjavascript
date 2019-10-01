@@ -59,7 +59,6 @@ class GroupIterator {
 }
 
 Group.prototype[Symbol.iterator] = function() {
-
     return new GroupIterator(this);
 }
 

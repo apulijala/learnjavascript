@@ -1121,12 +1121,41 @@ if (typeof global != "undefined" && !global.SCRIPTS)
 global.SCRIPTS = SCRIPTS;
 
 function getScriptForCharacter(codePoint) {
-    
-    for (script of SCRIPTS) {
-        console.log(script.ranges);
-    }
+    for (let script of SCRIPTS) {
+       if(script.ranges.some(([from, to]) => {
+        return codePoint > from && codePoint < to;
+        }))
+        {   
+            return script;
 
-    return null;
+        }
+    }
+return null;
 }
 
-getScriptForCharacter(101);
+// should return {name}
+function countBy(items, groupName) {
+
+    let count = [];
+    for (let item of items) {
+            name = groupName(item);
+            let index = count.findIndex(arg => arg.name == name);
+            if (index == -1) {
+
+            }
+    }
+}
+
+// count even and odd numbers.
+countBy([2,3,4,5,6,8], n => n%2 ==0);
+
+
+function textScripts(text) {
+
+}
+
+let script = getScriptForCharacter(101);
+console.log(script);
+
+console.log(textScripts('英国的狗说"woof", 俄罗斯的狗说"тяв"'));
+

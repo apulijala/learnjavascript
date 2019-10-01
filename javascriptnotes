@@ -355,12 +355,15 @@ Chapter 5
 
 function repeat . 
 
-This function will repeat action n number of times. 
+1) This function will repeat action n number of times. 
 action can be any function.
-
 It should take two arguments, the numebr of arguments and the input function
 should take atleast one parameter. 
 
+a)  After the function is done, produce a result as below.
+// → 0
+// → 1
+// → 2
 
 After the function is done. 
 produce a result like the one below. 
@@ -680,6 +683,17 @@ console.log(map(rtlScripts, s => s.name));
 // → ["Adlam", "Arabic", "Imperial Aramaic", ...]
 
 document testScripts
+
+ filter(({name}) => {  return name != "none";});
+
+  let total = scripts.reduce((n, {count}) => n + count, 0);
+  if (total == 0) return "No scripts found";
+
+  return scripts.map(({name, count}) => {
+    return `${Math.round(count * 100 / total)}% ${name}`;
+  }).join(", ");
+}
+
 
 
 

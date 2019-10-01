@@ -406,8 +406,7 @@ use forEach to print A and B which are an array that has A, and B.
 5) Filter.
 Write a function filter(array, test) which returns an array of elements that
 passs a test.
-
-console.log(filter(SCRIPTS, script => script.living));
+//find all living scripts. using living as a prroperty
 // → [{name: "Adlam", ...}, ...]
 
 b) Use ibuiolt filter to get the same result.

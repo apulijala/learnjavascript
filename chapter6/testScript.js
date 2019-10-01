@@ -1122,8 +1122,9 @@ global.SCRIPTS = SCRIPTS;
 
 function getScriptForCharacter(codePoint) {
     for (let script of SCRIPTS) {
+        
        if(script.ranges.some(([from, to]) => {
-        return codePoint >= from && codePoint <= to;
+         return codePoint >= from && codePoint <= to;
         }))
         {   
             

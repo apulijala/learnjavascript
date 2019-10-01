@@ -1123,17 +1123,16 @@ global.SCRIPTS = SCRIPTS;
 function getScriptForCharacter(codePoint) {
     for (let script of SCRIPTS) {
        if(script.ranges.some(([from, to]) => {
-        return codePoint > from && codePoint < to;
+        return codePoint >= from && codePoint <= to;
         }))
         {   
-            return script;
-
+            return script.name;
         }
     }
-return null;
+return "none";
 }
 
-// should return {name}
+// should return {name: "name", count : 0}
 function countBy(items, groupName) {
 
     let count = [];
@@ -1141,21 +1140,29 @@ function countBy(items, groupName) {
             name = groupName(item);
             let index = count.findIndex(arg => arg.name == name);
             if (index == -1) {
-
-            }
+                    count.push({name : name, count : 1});
+            }else {
+                    count[index].count++;
+            }   
     }
+    return count;
 }
 
 // count even and odd numbers.
-countBy([2,3,4,5,6,8], n => n%2 ==0);
+let evenOdd = countBy([2,3,4,5,6,8], n => n%2 ==0);
+console.log("Even odd is ");
+console.log(evenOdd);
 
 
 function textScripts(text) {
-
+    let scripts = countBy(text, char => {
+            return getScriptForCharacter(char.codePointAt(0));
+    });
+    console.log(scripts);
 }
 
 let script = getScriptForCharacter(101);
-console.log(script);
+// console.log(script);
 
 console.log(textScripts('英国的狗说"woof", 俄罗斯的狗说"тяв"'));
 

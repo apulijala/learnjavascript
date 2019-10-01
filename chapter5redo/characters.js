@@ -1219,3 +1219,52 @@ let correctResult = [];
 let arrays = [[1, 2, 3], [4, 5], [6]];
 console.log(arrays.reduce((a,b) => a.concat(b), []));
 
+function loop(start, test, reduction, body) {
+    for (current = start; test(current); current =reduction(current)) {
+        body(current);
+    }
+}
+
+loop(3, n => n > 0, n => n - 1, console.log);
+
+function every(array, test) {
+    // Your code here.
+    let val = true;
+    for (item of array) {
+          val = val &&test(item);
+    }
+    return val;
+}
+
+console.log(every([1, 3, 5], n => n < 10));
+// → true
+console.log(every([2, 4, 16], n => n < 10));
+// → false
+console.log(every([], n => n < 10));
+// → true
+
+function everyOne(array, test) {
+    return !array.some(item => !test(item));
+}
+
+console.log("Every one");
+console.log(everyOne([1, 3, 5], n => n < 10));
+// → true
+console.log(everyOne([2, 4, 16], n => n < 10));
+// → false
+console.log(everyOne([], n => n < 10));
+// → true
+
+function dominantDirection(text) {
+    // Your code here.
+    let results = countBy(text, char => {
+        let script =  characterScript(char.codePointAt(0));
+       return  script ? script.direction : "none";
+    }).filter(({name})  => name != "none").reduce((a,b ) => { return  a.value > b.value ? a : b }) ;
+    console.log("Results are ");
+    console.log(results);
+    return results.name;
+}
+
+console.log("Dominant direction");
+console.log(dominantDirection("Hello!"));

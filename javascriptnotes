@@ -460,9 +460,12 @@ write a function average which gives average of all elements in an array.
 
 a) Find all living scripts and get their average year. 
 living and year are the proeprties that you will be intereseted in.
+// → 1188
 
 b) Find all dead scripts and get their average year. 
 living and year are the proeprties that you will be intereseted in.
+// → 188
+
 
 solve both a and b using higher order functions as well as normal for loop.
 

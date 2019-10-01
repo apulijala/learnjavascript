@@ -1123,16 +1123,53 @@ function characterCount(script) {
 console.log(characterCount(SCRIPTS[0]));
 
 // find the script with hightest number of characters.
-
+/*
 console.log(SCRIPTS.reduce(
     (a, b) => { 
        return characterCount(a) > characterCount(b) ? a : b;
     }
 ));
+*/
 
 function average(array) {
-    return array.reduce((a,b) => a +b /array.length )
+    return array.reduce((a, b) => a + b) / array.length;
+    // return array.reduce((a,b) => a +b ) / array.length;
 }
 
+console.log("Average age of a living script is " + 
+    Math.round(average(
+    SCRIPTS.filter(script => script.living).map(script => script.year))));
+
+console.log("Average age of a dead script is " + 
+Math.round(average(
+SCRIPTS.filter(script => !script.living).map(script => script.year))));
+
+/*
+
+function average(array) {
+    return array.reduce((a, b) => a + b) / array.length;
+  }
+  
+  console.log(Math.round(average(
+    SCRIPTS.filter(s => s.living).map(s => s.year))));
+  // → 1188
+  console.log(Math.round(average(
+    SCRIPTS.filter(s => !s.living).map(s => s.year))));
+  // → 188
+*/
+
+function countBy(items, groupName) {
+    let result = [];
+    for (item of items) {
+        let name = groupName(item);
+        let index = result.indexOf(item.name == name);
+        if (index == -1) {
+            result.push({name : name, value : 1});
+        }else {
+            result[index].count++;
+        }
+    }
+    return result;
+}
 
 

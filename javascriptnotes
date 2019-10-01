@@ -395,47 +395,47 @@ Write a function unless that takes two parameters, both of which are functions.
 test (a function) and function called then. function called then is executed if test is false.
 
 a) 
-use repeat to produce the following output.
+use repeat along with 4 to produce the following output.
 // → 0 is even
 // → 2 is even
-
-use forEach to print A and B which are in array.
-
-https://eloquentjavascript.net/code#5
-From now on you can only pracitce using coding sandbox. See link above
-
-{
-   name: "Coptic",
-   ranges: [[994, 1008], [11392, 11508], [11513, 11520]],
-   direction: "ltr",
-   year: -200,
-   living: false,
-   link: "https://en.wikipedia.org/wiki/Coptic_alphabet"
-}
-
-write a function filter which takes all the scripts in an array and returns all the living scripts.
-function should be higher order function. 
-function filter(array, test)  {
+should be repeat(3, ...lambda expressions)
 
 
-}
-Array also has inbuilt filter method.
+use forEach to print A and B which are an array that has A, and B.
+
+5) Filter.
+Write a function filter(array, test) which returns an array of elements that
+passs a test.
+
+console.log(filter(SCRIPTS, script => script.living));
+// → [{name: "Adlam", ...}, ...]
+
+b) Use ibuiolt filter to get the same result.
+c) fild all scripts whose direction is ttb.
+
+
 
 Transforming with map.
 --------------
-write a function map. that gets the name of the scripts in an array. should be written as 
+6) write a function map. that gets the name of the scripts in an array. should be written as 
 a shigher order fucntion. 
 with signature.
 function map(array, transform);
 transform is a function that transforms elements of an array.
 
-solve the same using map operator on an array.
+a) test it with code . Print all the scripts whose direction is rtl and get names of the scripts in 
+an array and print them. Output below.
 
-write code that filters the scripts using rtl and gets the names of those scripts.
+["Adlam", "Arabic", "Imperial Aramaic", ...]
+Solve the same using map operator on an array.
 
+write code that filters the scripts using rtl and gets the names of those scripts. Use function map 
+as well as native map to give solutions.
+
+7)
 write a reduce function. This should emulate normal reduce opeartion.
 which has the following format 
-
+// combine is higher order function.
 function reduce(array, combine, start)
 
 Find the script with highest numebr of characters. range property give the number of characters in each range.

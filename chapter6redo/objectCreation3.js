@@ -20,8 +20,10 @@ Rabbit.prototype.teeth = "Small";
 console.log("Before overriding the teeth property");
 console.log(blackRabbit.teeth);
 
-blackRabbit.teeth = "long, sharp, and bloody";
+killerRabbit.teeth = "long, sharp, and bloody";
+console.log("Killer Rabbit's teeth are " + killerRabbit.teeth);
+
 console.log(blackRabbit.teeth);
-
-
+console.log("Black Rabbit's teeth are " + blackRabbit.teeth);
+console.log("Rabbit prototype's teeth " + Rabbit.prototype.teeth);
 

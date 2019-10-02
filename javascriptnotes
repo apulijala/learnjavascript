@@ -652,8 +652,24 @@ and toString is rpesent.
 
 Polymorphism
 --------------
+console.log(String(blackRabbit));
+// → a black rabbit
+
+
 for an array [1,2,3] declare a toString method using symbol that should print 
 length cm of blue yarn.
+
+Symbol.
+Assign Symbol("name") to variable called sym.
+check if sym == Symbol("name");
+
+Do something that gest the output below.
+
+console.log([1, 2].toString());
+// → 1,2
+console.log([1, 2][toStringSymbol]());
+// → 2 cm of blue yarn
+
 
 The Iterator interface.
 ------------------------

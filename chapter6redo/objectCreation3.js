@@ -27,3 +27,10 @@ console.log(blackRabbit.teeth);
 console.log("Black Rabbit's teeth are " + blackRabbit.teeth);
 console.log("Rabbit prototype's teeth " + Rabbit.prototype.teeth);
 
+Rabbit.prototype.toString= function () {
+    console.log(`a ${this.type} Rabbit`);
+}
+console.log("Using toString()");
+console.log(blackRabbit.toString());
+console.log("Using String()");
+console.log(String(blackRabbit));

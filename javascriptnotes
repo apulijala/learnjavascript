@@ -689,6 +689,13 @@ for (let {x, y, value} of matrix) {
 // → 0 1 value 0,1
 // → 1 1 value 1,1
 
+0 0 'value of 0 0'
+1 0 'value of 1 0'
+0 1 'value of 0 1'
+1 1 'value of 1 1'
+    console.log(x, y, value);
+
+
 
 Getters setters and statics
 --------------------------------

@@ -537,7 +537,8 @@ normalize() method.
 should return an array which converts a number to number/length.
 Note function does not take any arguments.
 
-normalize.call({coords: [0, 2, 3], length: 5});
+use call as part of the solutioon. call with [0, 2, 3] and length
+
 // → [0, 0.4, 0.6]
 
 Protottypes.
@@ -549,12 +550,9 @@ console.log(Object.getPrototypeOf({}) ==
 // → true
 console.log(Object.getPrototypeOf(Object.prototype));
 // → null
-console.log(Object.getPrototypeOf(Math.max) ==
-            Function.prototype);
-// → true
-console.log(Object.getPrototypeOf([]) ==
-            Array.prototype);
-// → true
+
+getPrototype of Math.max . Compare this with Function's prototype.
+get progottype of [] . Compaare this with Array's prototype
 
 4) delcare a variable called protoRabbit which has method called speak.
 do everything that should do. use prototype creation is part of solution

@@ -34,7 +34,20 @@ class MatrixIterator {
     }
 
     next() {
-        return {done:true};
+        console.log("Before height");
+        console.log(this.matrix);
+        /*
+        if (this.y == this.matrix.height) return {done:true};
+        console.log("After height");
+        let value = {x : this.x, y: this.y , value : this.matrix.get(x,y)};
+        this.x++;
+        if (this.x == this.matrix.width) {
+                this.y++;
+                thix.x = 0;
+        }
+
+        return {value : value, done : false}
+        */
     }
 }
 
@@ -42,7 +55,7 @@ class MatrixIterator {
 
 
 let matrix = new Matrix(2, 2, (x,y) => `value of ${x} and ${y}`);
-console.log(matrix);
+// console.log(matrix);
 
 Matrix.prototype[Symbol.iterator] = function() {
     return new MatrixIterator(this);

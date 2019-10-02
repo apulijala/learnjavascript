@@ -674,11 +674,21 @@ console.log([1, 2][toStringSymbol]());
 The Iterator interface.
 ------------------------
 Develop a class Matrix. which takes width, height and elemnt function (elment should be initilized to undefined)
-Matrix is stored in single dimensional array. so width*3 + 2 will give second row and first column (rows and cols should start with 0)
+Matrix is stored in single dimensional array. so width*3 + 2 will give second (but thrid) row and first column (assume rows and cols should start with 0)
 Develop a getter get(x,y) and set(x,y,value)
 
 develop an iterator for above. 
 and test it with new Matrix(2,2, `value of ${x} and ${y}`)
+
+Final Output. 
+for (let {x, y, value} of matrix) {
+  console.log(x, y, value);
+}
+// → 0 0 value 0,0
+// → 1 0 value 1,0
+// → 0 1 value 0,1
+// → 1 1 value 1,1
+
 
 Getters setters and statics
 --------------------------------

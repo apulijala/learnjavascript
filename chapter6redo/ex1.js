@@ -26,8 +26,32 @@ class Group {
     }
 }
 
+class GroupIterator {
+
+    constructor(group){
+        this.group = group;
+        this.x = 0;
+    }
+
+    next() {
+        if (this.x == this.group.group.length) return {done : true};
+        let value = this.group.group[this.x]; 
+        this.x++;
+        return {value : value, done : false};
+    }
+}
+
+Group.prototype[Symbol.iterator] = function() {
+    return new GroupIterator(this);
+}
 
 
+for (let value of Group.from(["a", "b", "c"])) {
+    console.log(value);
+  }
+
+
+/*
 let group = Group.from([10, 20]);
 console.log(group.has(10));
 // → true
@@ -37,3 +61,4 @@ group.add(10);
 group.delete(10);
 console.log(group.has(10));
 // → false
+*/

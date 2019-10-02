@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/Matrix.js"
+            "program": "${workspaceFolder}/ex1.js"
         }
     ]
 }

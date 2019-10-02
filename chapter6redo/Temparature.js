@@ -20,6 +20,5 @@ console.log(temp.fahrenheit);
 temp.fahrenheit = 86;
 console.log(temp.celsius);
 // → 30
-console.log(SymmetricMatrix(2) instanceof Matrix);
-console.log(SymmetricMatrix(2) instanceof SymmetricMatrix);
+
 

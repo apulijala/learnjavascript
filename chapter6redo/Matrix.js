@@ -63,7 +63,34 @@ for (let {x, y, value} of matrix) {
     console.log(`${x} ${y} ${value}` );
 }
 
-class SymmetrcMatrix extends Matrix {
+class SymmetricMatrix extends Matrix {
+    constructor(size, element = (x,y) => undefined) {
+        super(size, size, (x,y) => {
+                if (x > y) {
+                        return element(y,x);
+                }else {
+                    return element(x,y);
+                }
 
-    
+        });
+    }
+
+    set (x,y, value) {
+        super.set(x,y, value);
+        if (x != y) {
+            super.set(y,x, value);
+        }
+    }
+
 }
+
+let matrix1 = new SymmetricMatrix(5, (x, y) => `${x},${y}`);
+console.log(matrix1.get(2, 3));
+// → 3,2
+console.log("Iterating over matrix1");
+for ({x,y, value} of matrix1) {
+    console.log(x, y, value);
+}
+console.log(new SymmetricMatrix(2) instanceof Matrix);
+console.log(new SymmetricMatrix(2) instanceof SymmetricMatrix);
+

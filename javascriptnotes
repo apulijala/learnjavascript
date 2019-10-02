@@ -689,11 +689,15 @@ for (let {x, y, value} of matrix) {
 // → 0 1 value 0,1
 // → 1 1 value 1,1
 
+arvind@arvind-Orio
+
 0 0 'value of 0 0'
 1 0 'value of 1 0'
 0 1 'value of 0 1'
 1 1 'value of 1 1'
     console.log(x, y, value);
+
+[ 'value 0, 0', 'value 1, 0', 'value 0, 1', 'value 1, 1' ] }
 
 
 
@@ -708,6 +712,7 @@ setter method should take Farenheit and return celsius.
 
 (F-32)/9 = c/5
 F = 1.8*c + 32
+
 C = (F -32)/1.8
 
 output should be as follows.
@@ -739,6 +744,8 @@ Matrix(2, 2) is it of type SymmetricMatrix
 
 
 https://eloquentjavascript.net/code/#5.4
+
+We have Submitted Vat return and sent payment details separately. Payment should reach to HMRC latest by 07/10/2019
 
 To be documented.
 

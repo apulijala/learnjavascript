@@ -25,6 +25,7 @@ class Matrix {
 
 let matrix = new Matrix(2,2, (x,y) => `${x} ${y}`);
 console.log(matrix);
+// console.log(matrix.get(0,0));
 
 class MatrixIterator {
     constructor(matrix) {

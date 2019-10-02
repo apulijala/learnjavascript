@@ -566,6 +566,7 @@ Object.getPrototypeOf();
 Object.assign(0;
 Object.keys();
 
+// Do this using prototype method
 
 console.log(Object.getPrototypeOf(Rabbit) ==
             Function.prototype);
@@ -575,7 +576,20 @@ console.log(Object.getPrototypeOf(weirdRabbit) ==
 // → true
 5) Create a class called Rabbit which takes type as a parameter.
 and has a function called speak. which should print out the line 
-The killer rabbit says 'SKREEEE!'
+Use Function way as part of the solution.
+
+declare weiredRabbit as an instance. and test it out.
+
+compare Rabbit's prototype to a function's
+
+// → true
+compare weiredRabbit's to Rabbit's prototype. What's the difference between getPrototypeOf and
+.prototype method.
+
+console.log(Object.getPrototypeOf(weirdRabbit) ==
+            Rabbit.prototype);
+// → true
+
 
 Class Notation:
 -------------

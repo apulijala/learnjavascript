@@ -40,4 +40,8 @@ function normalize() {
 }
 normalize.call({coords: [0, 2, 3], length : 5});
 
-
+console.log(Object.getPrototypeOf(Math.max));
+console.log(Object.getPrototypeOf(Math.max) == Function.prototype);
+console.log(Object.getPrototypeOf(whiteRabbbit));
+console.log(Object.getPrototypeOf([]));
+console.log(Object.getPrototypeOf([])  == Array.prototype);

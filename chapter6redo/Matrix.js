@@ -5,9 +5,9 @@ class Matrix {
         // Populate the matrix.
         this.content = [];
 
-        for (var k = 0; k < this.height; k++) {
-            for (var l =0; l < this.width; l++) {
-                this.content[k*this.width + l]  = element(l,k);
+        for (var y = 0; y < this.height; y++) {
+            for (var x =0; x < this.width; x++) {
+                this.content[y*this.width + x]  = element(x,y);
             }
         }
     }
@@ -17,14 +17,15 @@ class Matrix {
     }
 
     get (o,p)  {
-        return this.content[o*this.height + p];
+        return this.content[p*this.height + o];
     }
 
 }
 
 
-let matrix = new Matrix(2,2, (x,y) => `${x} ${y}`);
-console.log(matrix);
+let matrix = new Matrix(2,2, (x,y) => `value ${x}, ${y}`);
+// console.log("Matrix is "); 
+// console.log(matrix);
 // console.log(matrix.get(0,0));
 
 class MatrixIterator {
@@ -43,7 +44,7 @@ class MatrixIterator {
 
         this.x++;
 
-        if (this.x == this.width) {
+        if (this.x == this.matrix.width) {
             this.y++;
             this.x = 0;
         }
@@ -60,4 +61,9 @@ Matrix.prototype[Symbol.iterator] =  function() {
 
 for (let {x, y, value} of matrix) {
     console.log(`${x} ${y} ${value}` );
+}
+
+class SymmetrcMatrix extends Matrix {
+
+    
 }

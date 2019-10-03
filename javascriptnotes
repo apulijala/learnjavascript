@@ -843,7 +843,11 @@ if there is noAccount, throw an error with No Such Account : <acctName>
 write a function transfer, which takes from (accountNumber) and amount.
 subtract money from account only if sufficient funds.
 and the tranferTo accountNmae. use getAccount() for this. ideally it should be prompt.
-but for now assume that it is fine. 
+
+but for now assume that prompt is done by input number.
+Test this function with valid and invalid acct numbers.
+fix it and then fix it.
+
 
 
 

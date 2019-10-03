@@ -790,6 +790,17 @@ Types
 
 Testing
 -------
+a) Write a function called test() which takes two parameters. 
+label and body. 
+body is a hihger order function can take any parameter and should return boolean value. . 
+if body returns false. should print Failed: label
+
+Test it with following scenarios.
+
+"convert Latin text to uppercase"  "hello" converted to upperCase and compared to HELLO
+"convert greek text to uppercase"   "" converted to upper case to and convrted to ""
+don't convert case-less characters  "    "  converted to upper case and converted to "    "
+
 
 
 

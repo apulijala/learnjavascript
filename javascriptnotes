@@ -778,6 +778,15 @@ document testScripts
 }
 
 
+-------------------------
+a) Write a function called canYouSpotTheProblem. 
+from counter 0 to counter < 10. print "Happy happy". 
+Don't declare counter. 
+use strict pragma. 
+
+
+
+
 
 
 

@@ -821,6 +821,36 @@ else return {element : <last element of the array>}
 
 Exceptions
 ----------
+Write a function called promptDirection() which takes a parameter direction.
+if the direction is left, return "L"  . if the direction is Right, return R.
+if anything else throw error with "Invalid direction" and direction. Valid directions 
+are L, R
+
+Write a function called look() which invokes promptDirection() and if it is L prints out
+a house. If it is right, prints two angry bears.
+
+Invoke look. and catch error . Print soemthing went wrong + error.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

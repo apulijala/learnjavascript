@@ -803,13 +803,24 @@ don't convert case-less characters  "    "  converted to upper case and converte
 
 Debugging
 ----------
+convret number to String.
+numberToString(n, base=10);
+console.log(numberToString(13, 10));
+
+Write a recursive function. Test it with both negative and positive numbers.
 
 
 Error Propogation
 -----------------
-convret number to String.
-numberToString(n, base=10);
-console.log(numberToString(13, 10));
+function promptNumber which tests if it is number, if it is not return result.
+else return result
+
+write a function lastEleemnt(array);
+if length of array is 0, return {falled : true}
+else return {element : <last element of the array>}
+
+Exceptions
+----------
 
 
 

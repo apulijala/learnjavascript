@@ -807,6 +807,9 @@ Debugging
 
 Error Propogation
 -----------------
+convret number to String.
+numberToString(n, base=10);
+console.log(numberToString(13, 10));
 
 
 

@@ -11,13 +11,11 @@ const box = {
  };
 
  function withBoxUnlocked(myFunc) {
-
+    locked = box.locked;
+    if (!locked) {return myFunc()};
     box.unlock();
     try {
-        myFunc();
-    }catch (error) {
-        console.log(error);
-        
+        return myFunc();
     } finally {
         box.lock();
     }

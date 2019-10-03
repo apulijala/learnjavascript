@@ -831,6 +831,37 @@ a house. If it is right, prints two angry bears.
 
 Invoke look. and catch error . Print soemthing went wrong + error.
 
+Cleaning Up After Exceptions
+------
+declare 3 accounts. 
+a : 100, b : 0, c : 20
+
+declare a function getAccount();
+which takes accountNmae
+if there is noAccount, throw an error with No Such Account : <acctName>
+
+write a function transfer, which takes from (accountNumber) and amount.
+subtract money from account only if sufficient funds.
+and the tranferTo accountNmae. use getAccount() for this. ideally it should be prompt.
+but for now assume that it is fine. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

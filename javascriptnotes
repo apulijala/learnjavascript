@@ -846,7 +846,24 @@ and the tranferTo accountNmae. use getAccount() for this. ideally it should be p
 
 but for now assume that prompt is done by input number.
 Test this function with valid and invalid acct numbers.
-fix it and then fix it.
+fix it and then fix it. use finally as part of the solution.
+
+
+Selective catching
+--------------
+
+Declare InputError as an exception (figure out how to do it.)
+Make promptDirection throw an InputError. instread of Error.
+
+put some wrapper code around promptDirection which catches the error. expecting. 
+otherwise throws the error back.
+
+
+
+
+
+Assertions
+---------
 
 
 

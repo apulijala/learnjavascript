@@ -801,6 +801,9 @@ Test it with following scenarios.
 "convert greek text to uppercase"   "" converted to upper case to and convrted to ""
 don't convert case-less characters  "    "  converted to upper case and converted to "    "
 
+Debugging
+----------
+
 
 
 

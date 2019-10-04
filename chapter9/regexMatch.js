@@ -28,4 +28,12 @@ function minusOne(match, amount, units) {
 
 console.log(stock.replace(/(\d+) (\w+)/g, minusOne));
 
+function stripComments(commentsToRemove) {
 
+    let replacementRegex = /\/\/.*|\/\*[^]*?\*\//g;
+    return commentsToRemove.replace(replacementRegex, "");
+}
+
+console.log(stripComments("1 + /* 2 */3"));
+console.log(stripComments("x = 10;// ten!"));
+console.log(stripComments("1 /* a */+/* b */ 1"));

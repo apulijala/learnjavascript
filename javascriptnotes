@@ -946,8 +946,13 @@ Barbara, Liskov\nJohn, McCarthy\nPhilip, Wadler
 let s = "the cia and fbi";
 print cia and fbi to upper case. using replace and passing a function to it.
 
+Plug in function using replace to the string
+let stock = "1 lemon, 2 cabbages, and 101 eggs";
+and print the string below. 
+no lemon, 1 cabbage, and 100 eggs
 
 
+console.log(stock.replace(/(\d+) (\w+)/g, minusOne));
 
 
 

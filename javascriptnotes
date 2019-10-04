@@ -896,6 +896,17 @@ Matches and groups
 ----------------
 Write a regular expression that matches one two 100 and pirnt the string that matched and index that matched. 
 
+in all cases print that string that matched and the group that matched.
+regex that matches quoted text and then print the text that matched and the group that matched and test it with
+she said 'hello'.
+
+regex that matches bad and zero or more ly and test it with bad.
+regex that matches one or more digits and test it with 123.
+
+
+The Date class.
+-----------
+
 
 
 

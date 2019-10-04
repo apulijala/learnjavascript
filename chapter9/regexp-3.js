@@ -11,10 +11,6 @@ console.log("one two 100".match(/\d+/));
 var caseInsensitiveGroup = /boo+(hoo+)(hoo+)+/i;
 console.log(caseInsensitiveGroup.exec("Boohoooohoohooo"));
 
-let quotedText = /'([^']*)'/;
-console.log(quotedText.exec("she said 'hello'"));
-
-
 
 
 

@@ -889,14 +889,13 @@ d) Rewrite datetime uwing flower brackets {}
 
 Group subexpressions
 ---------------
+write a regular expression that bo (followed by one or more o) and one or more hoo  . And one more hoo
 
-let cartoonCrying = /boo+(hoo+)+/i;
-console.log(cartoonCrying.test("Boohoooohoohooo"));
-// → true
+
 
 Matches and groups
 ----------------
-
+Write a regular expression. 
 
 
 

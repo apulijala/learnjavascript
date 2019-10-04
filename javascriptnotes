@@ -908,11 +908,22 @@ The Date class.
 -----------
 create a date like Wed Dec 09 2009 00:00:00 GMT+0100 
 2009-12-09T00:00:00.000Z
-
 Get time of 2013, 11, 19. time is epoch time. 
-
 get date from string 1-30-2003 (mon-dd-yyyy)
+2003-01-30T00:00:00.000Z
 
+Word And String boundaries.
+-------------------------
+write  a regex that matches cat, but only if it is a word.
+test it with concatenate . SHould return false. 
+cat should return true.
+
+write a regular expression for "15 pigs" only if it word boundry, but instead of pigs, could be 
+chickens or cows
+
+
+The Mechanics of Matching
+-------------------------
 
 
 

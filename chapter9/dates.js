@@ -15,10 +15,12 @@ console.log("get date from string");
 console.log( getDateFromString("1-30-2003"));
 let regexWordBoundry = /\bcat\b/;
 console.log(regexWordBoundry.exec(" cat "));
-
 let animalregex = /\b\d+ (cow|pig|chicken)s?\b/;
 console.log(animalregex.test("15 chickens"));
 console.log(animalregex.test("1 cow"));
+
+
+
 
 
 

@@ -925,6 +925,32 @@ chickens or cows
 The Mechanics of Matching
 -------------------------
 
+Backtracking.
+--------------
+
+/\b([01]+b|[\da-f]+h|\d+)\b/
+
+
+The replace.
+
+console.log("Borobudur".replace(/[ou]/, "a"));
+// → Barobudur
+console.log("Borobudur".replace(/[ou]/g, "a"));
+
+Change 
+Liskov, Barbara\nMcCarthy, John\nWadler, Philip
+to 
+Barbar, Liskov\nJohn, McCarthy\nPhilip, Wadler
+
+
+let s = "the cia and fbi";
+console.log(s.replace(/\b(fbi|cia)\b/g,
+                str => str.toUpperCase()));
+
+
+
+
+
 
 
 

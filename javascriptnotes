@@ -906,6 +906,19 @@ regex that matches one or more digits and test it with 123.
 
 The Date class.
 -----------
+create a date like Wed Dec 09 2009 00:00:00 GMT+0100 
+2009-12-09T00:00:00.000Z
+
+Get time of 2013, 11, 19. time is epoch time. 
+
+get date from string 1-30-2003 (mon-dd-yyyy)
+
+
+
+
+
+
+
 
 
 

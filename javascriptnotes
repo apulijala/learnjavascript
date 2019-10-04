@@ -983,6 +983,17 @@ let name = "dea+hl[]rd";
 hint
 -----
 $& gives what matched. No need for $1
+[\\[.+*?(){|^$]
+
+[\\[.+*?(){|^$]
+
+Search and lastIndex.
+console.log(" word".search(/\S/));
+
+Match and looping.
+--------------
+
+
 
 
 

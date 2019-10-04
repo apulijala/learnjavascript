@@ -1,0 +1,15 @@
+Match starts at 8
+String that matched 100
+In string
+[ '100', index: 8, input: 'one two 100', groups: undefined ]
+[ 'Boohoooohoohooo',
+  'hoooo',
+  'hooo',
+  index: 0,
+  input: 'Boohoooohoohooo',
+  groups: undefined ]
+[ '\'hello\'',
+  'hello',
+  index: 9,
+  input: 'she said \'hello\'',
+  groups: undefined ]

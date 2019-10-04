@@ -17,6 +17,16 @@ var usingBraces = /\d{1,2}-\d{1,2}-\d{1,4} \d{1,2}:\d{1,2}/;
 console.log(usingBraces.test("1-30-2003 8:45"));
 
 console.log("case insensitive regex with match groups");
+
 var caseInsensitiveGroup = /boo+(hoo+)+/i;
 console.log(caseInsensitiveGroup.test("Boohoooohoohooo"));
 console.log(caseInsensitiveGroup.test("boohoohoo"));
+// console.log(caseInsensitiveGroup.exec("boohoohoo"));
+
+
+
+
+
+
+
+

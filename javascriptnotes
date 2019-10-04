@@ -889,13 +889,12 @@ d) Rewrite datetime uwing flower brackets {}
 
 Group subexpressions
 ---------------
-write a regular expression that bo (followed by one or more o) and one or more hoo  . And one more hoo
-
-
+write a regular expression that bo (followed by one or more o) and one or more hoo  . And one more hoo. 
+Do a case insensitive binding.
 
 Matches and groups
 ----------------
-Write a regular expression. 
+Write a regular expression that matches one two 100 and pirnt the string that matched and index that matched. 
 
 
 

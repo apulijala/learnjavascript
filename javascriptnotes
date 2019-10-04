@@ -866,6 +866,13 @@ Chapter 9
 ----------
 Regular expressions.
 
+1) Create regular expression in two different ways (// and new RegExp) for eighteen+ and test it.
+a) create regex for abc and test it for abcde and abxde 
+2)Test if "in 1992" binds to any digit.
+3) Write a regex for 01-30-2003 15:20 and see if it matches. Test it also with 30-jan-2003 15:20"
+don't anchor the regule expression. But check if the full match is achieved.
+4) 
+
 
 
 

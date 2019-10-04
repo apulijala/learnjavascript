@@ -965,11 +965,24 @@ should print // → x = 10;
 
 "1 /* a */+/* b */ 1" wrong implementation of it is // → 1 1, correct one is 1 + 1
 should print // → 1 + 3
-
-
-
-
 console.log(stock.replace(/(\d+) (\w+)/g, minusOne));
+
+Dynamically creating RegeExp Objects
+---------------------------------------
+
+Assume let name = "harry"; 
+Change Harry is a suspicious character to  _Harry_ is a suspicious character.
+Assume that you don't know harry upfront. 
+Use word boundry as part of solution, even though it works without
+
+let name = "dea+hl[]rd";
+"This dea+hl[]rd guy is super annoying."; should now become 
+// → This _dea+hl[]rd_ guy is super annoying.
+
+
+hint
+-----
+$& gives what matched. No need for $1
 
 
 

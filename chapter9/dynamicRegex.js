@@ -1,3 +1,4 @@
+/*
 let pattern = /(y)/g;
 let str = "xyzzy";
 let match = pattern.exec(str);
@@ -30,3 +31,11 @@ let digitRegex = new RegExp("\\d+", "g");
 while (match1 = digitRegex.exec(myStr)) {
     console.log("Found " + match1[0] + " at index " + match1.index);
 }
+*/
+
+let secRegex = /\[(.*)\]/;
+let str = "[address]"
+console.log(str.match(secRegex)[1]);
+
+let element = "hello=world" 
+console.log(!/^\s*(;.*)?$/.test(element));

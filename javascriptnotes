@@ -982,6 +982,17 @@ let name = "dea+hl[]rd";
 
 xyzzy. Matchy y after index = 3.
 
+For string "Banana" print all the matches of an
+
+Looping over matches.
+------------------
+"A string with 3 numbers in it... 42 and 88.";
+Print the number and index of the string that matched.
+
+
+Parsing an ini file.
+--------------------
+
 
 
 

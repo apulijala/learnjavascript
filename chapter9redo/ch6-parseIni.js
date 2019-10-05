@@ -10,8 +10,10 @@ function parseINI(text) {
         let match;
         if (match = line.match(/^(\w+)=(.*)$/)) {
             content[match[1]] = match[2];
+
           }else if (match = line.match(/\[(.*)\]/)) {
-           // content.log(match[1]);
+                content = result[match[1]]  = {};
+           
           }
 
     });

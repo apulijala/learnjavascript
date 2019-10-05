@@ -992,6 +992,18 @@ Print the number and index of the string that matched.
 
 Parsing an ini file.
 --------------------
+Write a program that does the following.
+
+console.log(parseINI(`
+name=Vasilis
+[address]
+city=Tessaloniki
+[datta]
+narsimha=saraswati
+sripada=vallabha
+`));
+
+// → {name: "Vasilis", address: {city: "Tessaloniki"}}
 
 
 

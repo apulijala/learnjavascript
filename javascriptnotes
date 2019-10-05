@@ -980,6 +980,14 @@ let name = "dea+hl[]rd";
 // → This _dea+hl[]rd_ guy is super annoying.
 
 
+xyzzy. Matchy y after index = 3.
+
+
+
+
+
+
+
 hint
 -----
 $& gives what matched. No need for $1

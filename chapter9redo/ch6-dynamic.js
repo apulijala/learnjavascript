@@ -12,4 +12,13 @@ console.log("Banana".match(/an/g));
 let myStr = "This dea+hl[]rd guy is super annoying."; 
 
 // First let me remove special characters from name.
-console.log(name.replace(/[\[\]\+]/g , "\\$&"));
+name = name.replace(/[\[\]\+]/g , "\\$&");
+console.log(name);
+
+console.log(myStr.replace(new RegExp("(" + name + ")", "g"), "__$1__" ));
+
+let myRegex = /y/g;
+ myRegex.lastIndex = 3;
+
+// console.log(myRegex.exec("xyzzy").index);
+console.log(myRegex.exec("xyzzy"));

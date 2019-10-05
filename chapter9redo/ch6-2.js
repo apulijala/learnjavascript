@@ -13,8 +13,8 @@ let result = /\d+/;
 console.log(result.exec("one two 100")[0]);
 console.log(result.exec("one two 100")["index"]);
 
-let badRegex = /bad(ly)+/;
+let badRegex = /bad(ly)?/;
 console.log(badRegex.exec("bad"));
-console.log(badRegex.exec("badlyt"));
+console.log(badRegex.exec("aaaaaaaaaaaaaabadlyt"));
 console.log(badRegex.exec("badlyly"));
 

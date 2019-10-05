@@ -940,9 +940,11 @@ Backtracking.
 The replace.
 ------------
 
-console.log("Borobudur".replace(/[ou]/, "a"));
+make Borobudur Barobudur
+
 // → Barobudur
-console.log("Borobudur".replace(/[ou]/g, "a"));
+make Borobudur to Barabadar
+
 
 Change 
 Liskov, Barbara\nMcCarthy, John\nWadler, Philip

@@ -869,15 +869,19 @@ Regular expressions.
 1) Create regular expression in two different ways (// and new RegExp) for eighteen+ and test it.
 a) create regex for abc and test it for abcde and abxde 
 2)Test if "in 1992" binds to any digit.
+
 3) Write a regex for 01-30-2003 15:20 and see if it matches. Test it also with 30-jan-2003 15:20"
 don't anchor the regule expression. But check if the full match is achieved.
-4) Wirte a regrex that binds to any number except 0 and 1 and test it with  1100100010200110 (should return false) and 
+
+4) Wirte a regrex that binds to only 0 and 1 and test it with  1100100010200110 (should return false) and 
 1100100010100110 which should return true.
 
 Repeating parts of the pattern.
 5) 
 Match one or more digits within single quotes. "'123'" should return true. "''" should return false.
+
 b) zero or more digits within single quotes. "'123'" should rerturn true . "''" should return true too.
+
 c) neighbo (zero or one) u r
 test it with .
 console.log(neighbor.test("neighbour"));
@@ -889,11 +893,12 @@ d) Rewrite datetime uwing flower brackets {}
 
 Group subexpressions
 ---------------
-write a regular expression that bo (followed by one or more o) and one or more hoo  . And one more hoo. 
+write a regular expression that bo (followed by one or more o) and one or more hoo+  . And one more hoo. 
 Do a case insensitive binding.
 
 Matches and groups
 ----------------
+
 Write a regular expression that matches one two 100 and pirnt the string that matched and index that matched. 
 
 in all cases print that string that matched and the group that matched.
@@ -901,6 +906,7 @@ regex that matches quoted text and then print the text that matched and the grou
 she said 'hello'.
 
 regex that matches bad and zero or more ly and test it with bad.
+
 regex that matches one or more digits and test it with 123.
 
 

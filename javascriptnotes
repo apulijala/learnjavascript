@@ -982,6 +982,7 @@ Assume let name = "harry";
 Change Harry is a suspicious character to  _Harry_ is a suspicious character.
 Assume that you don't know harry upfront. 
 Use word boundry as part of solution, even though it works without
+_$1_ is a suspicious character
 
 let name = "dea+hl[]rd";
 "This dea+hl[]rd guy is super annoying."; should now become 

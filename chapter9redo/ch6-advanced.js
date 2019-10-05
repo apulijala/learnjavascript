@@ -14,6 +14,8 @@ let stock = "1 lemon, 2 cabbages, and 101 eggs";
 console.log(stock.replace(/(\d+) (\w+)/g, replaceFunc));
 
 function stripComments(commentStr) {
+    let removalRegex = /(\/\/.*)|(\/\*[^]*?\n*\*\/)/g;
+    return commentStr.replace(removalRegex, "");
 
 }
 

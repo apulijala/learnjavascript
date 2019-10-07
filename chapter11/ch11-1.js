@@ -47,7 +47,24 @@ new Promise((_, reject) => reject(new Error("Fail")))
 // → Caught failure Error: Fail
 // → Handler 2 nothing
 
+class Timeout extends Error {}
 
+function request(nest, target, type, content) {
+   // nest.send(target,type, content, () => {console.log("Hello World")} );
+
+   return new Promise((resolve, reject) => {
+        let done = false;
+
+        function attempt(n) {
+
+        }
+
+
+   });
+}
+
+
+ request(bigOak,"Cow Pasture", "note", "Let's caw loudly at 7PM");
 
 
 

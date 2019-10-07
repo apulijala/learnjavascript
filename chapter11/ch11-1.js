@@ -1,5 +1,6 @@
 // setTimeout(() => {console.log("Tick")}, 15000);
-let {bigOak, defineRequestType} = require("./crow-tech");
+const {bigOak, defineRequestType, everywhere}  = require("./crow-tech");
+
 bigOak.readStorage("food caches",
         caches => {
             let firstCache = caches[0];           
@@ -25,11 +26,41 @@ fifteen.then(
 );
 
 function storage(nest, name) {
-    return new Promise(resolve => {
-        nest.readStorage(name => result => {
-            
-        });
+  return new Promise(resolve => {
+    nest.readStorage(name, result => resolve(result));
+  });
 }
+
+storage(bigOak, "enemies")
+.then(value => console.log("Got", value));
+
+
+// Failure.
+
+new Promise((_, reject) => reject(new Error("Fail")))
+  .then(value => console.log("Handler 1"))
+  .catch(reason => {
+    console.log("Caught failure " + reason);
+    return "nothing";
+  })
+  .then(value => console.log("Handler 2", value));
+// → Caught failure Error: Fail
+// → Handler 2 nothing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

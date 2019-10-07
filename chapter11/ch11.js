@@ -139,10 +139,15 @@ requestType("storage", (nest, name) => storage(nest, name));
 
 function findInStorage(nest, name) {
   return storage(nest, name).then(found => {
-    if (found != null) return found;
+    if (found != null) {// console.log("Found is " + found);
+    return found;}
     else return findInRemoteStorage(nest, name);
   });
 }
+let myFind = findInStorage(bigOak,"enemies");
+myFind.then(console.log("some value" + found));
+
+
 
 function network(nest) {
   return Array.from(nest.state.connections.keys());

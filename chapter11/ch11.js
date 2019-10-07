@@ -21,6 +21,7 @@ storage(bigOak, "enemies")
 var Timeout = class Timeout extends Error {}
 
 function request(nest, target, type, content) {
+
   return new Promise((resolve, reject) => {
     let done = false;
     function attempt(n) {
@@ -37,11 +38,16 @@ function request(nest, target, type, content) {
     }
     attempt(1);
   });
+
 }
 
 // Logging request.
 console.log("Calling Request");
-request(bigOak, "Cow Pasture", "note", "Let's caw loudly at 7PM")
+
+new Promise(){
+    
+}
+// request(bigOak, "Cow Pasture", "note", "Let's caw loudly at 7PM").
 
 
 

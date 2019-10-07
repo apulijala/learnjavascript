@@ -11,3 +11,7 @@ exports.formatDate = function(date, format) {
     if (tag == "dddd") return days[date.getDay()];
   });
 };
+
+exports.helloWorld = function(myName) {
+    return ("Hello World to " + myName);
+}

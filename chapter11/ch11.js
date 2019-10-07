@@ -41,7 +41,10 @@ function request(nest, target, type, content) {
 
 // Logging request.
 console.log("Calling Request");
-request(bigOak, "Cow Pasture", "note", "Let's caw loudly at 7PM");
+request(bigOak, "Cow Pasture", "note", "Let's caw loudly at 7PM")
+
+
+
 
 /*
 function requestType(name, handler) {

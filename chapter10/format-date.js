@@ -1,17 +1,7 @@
 const ordinal = require("ordinal");
-const {days, months} = require("date-names");
+const {days} = require("date-names");
 
-exports.formatDate = function(date, format) {
-  return format.replace(/YYYY|M(MMM)?|Do?|dddd/g, tag => {
-    if (tag == "YYYY") return date.getFullYear();
-    if (tag == "M") return date.getMonth();
-    if (tag == "MMMM") return months[date.getMonth()];
-    if (tag == "D") return date.getDate();
-    if (tag == "Do") return ordinal(date.getDate());
-    if (tag == "dddd") return days[date.getDay()];
-  });
-};
+console.log(days[1]);
+//console.log(months[4]);
+console.log(ordinal(25));
 
-exports.helloWorld = function(myName) {
-    return ("Hello World to " + myName);
-}

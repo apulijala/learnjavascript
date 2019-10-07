@@ -1103,6 +1103,29 @@ name=Vasilis
 city=Tessaloniki`));
 // → {name: "Vasilis", address: {city: "Tessaloniki"}}
 
+Chapter 10
+Format Date
+-----------
+
+format_date.js. and fromatDate should be in a file.
+
+Write a function called formatDate which is a function
+The function should do the following. 
+function(date, fromat) {
+
+}
+
+return 
+
+if it encounters "YYYY"  should return full year.
+if it encounters "M"  should return full Month.
+if it encounters "MMMM"  should return full Month's month.
+if it encounters "D"  should return Date .
+If it encounters "Do" should return Date's ordinal.
+If it encounter "dddd" should return days's getDay
+
+
+
 
 
 

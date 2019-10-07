@@ -1,12 +1,18 @@
-let weekDay = function() {
-    console.log("In the weekday");
-    const names = ["Rama", "Krishna", "Dattatreya"];
+const weekDay = function() {
+    
+    const names = ["Sunday", "Monday", "Tuesday", "Wednesday",
+                   "Thursday", "Friday", "Saturday"];weekDay.number("Sunday")
     return {
-        name : function(x) {
-            return names[x];
+        name : function(number) {
+            return names[number];
+        
+        },
+        number : function(name) {
+            return names.indexOf(name);
         }
     }
-}
+}();
 
-var obj = weekDay();
-console.log(obj.name(2));
+
+console.log(weekDay.name(2));
+// console.log(obj.name(2));

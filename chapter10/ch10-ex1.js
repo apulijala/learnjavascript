@@ -7,11 +7,14 @@
       number(name) { return names.indexOf(name); }
     };
 
-  } // ();
+  }();
 
   let myName = weekDay.name;
   console.log(myName(1));
- // console.log(" My Name is " + myName(2));
-  
-  // console.log(weekDay.name(weekDay.number("Sunday")));
-  // → Sunday
+
+  function evalAndReturnX(code){
+        eval(code);
+        return x;
+  }
+
+  console.log(evalAndReturnX("var x=2"));

@@ -8,14 +8,24 @@ Promise.resolve(handler(13))
 failure => {console.log("This is a failure")});
 */
 
-let promise = new Promise(function(resolve, reject) {
-    // the function is executed automatically when the promise is constructed
+function doWork(firstVal, resolve, reject) {
+
+    return new Promise(function(resolve, reject) {
+        // the function is executed automatically when the promise is constructed
+      
+        // after 1 second signal that the job is done with the result "done"
+       setTimeout(() => {console.log(firstVal)}, 1000);
+        resolve("nobody");
+       // setTimeout(() => reject(new Error("Whoops!")), 1000);
+      })
+}
+
+doWork("This is the first value").then(
+).then(response => {console.log("This is success " + response)},
+      anything => {console.log("This is a failure")}
   
-    // after 1 second signal that the job is done with the result "done"
-   setTimeout(() => resolve("done"), 1000);
-   // setTimeout(() => reject(new Error("Whoops!")), 1000);
-  }).then(response => {console.log("This is success " + response)},
-  failure => {console.log("This is a failure")});
+  );
+
 
 
 

@@ -1,5 +1,9 @@
+/*
 const ordinal = require("ordinal");
 const {days, months} = require("date-names");
+*/
+// import ordinal from "ordinal";
+import {days, months} from "date-names";
 
 /*
 console.log(days[1]);

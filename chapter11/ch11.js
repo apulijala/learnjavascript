@@ -2,16 +2,21 @@ var bigOak = require("./crow-tech").bigOak;
 
 var defineRequestType = require("./crow-tech").defineRequestType;
 
+
 defineRequestType("note", (nest, content, source, done) => {
   console.log(`${nest.name} received note: ${content}`);
   done();
 });
 
 function storage(nest, name) {
+    console.log("storage");
   return new Promise(resolve => {
     nest.readStorage(name, result => resolve(result));
   });
 }
+console.log("Calling storage");
+storage(bigOak, "enemies")
+.then(value => console.log("Got "  , value));
 
 var Timeout = class Timeout extends Error {}
 
@@ -34,6 +39,11 @@ function request(nest, target, type, content) {
   });
 }
 
+// Logging request.
+console.log("Calling Request");
+request(bigOak, "Cow Pasture", "note", "Let's caw loudly at 7PM");
+
+/*
 function requestType(name, handler) {
   defineRequestType(name, (nest, content, source,
                            callback) => {
@@ -184,3 +194,4 @@ async function chicks(nest, year) {
   }));
   return list;
 }
+*/

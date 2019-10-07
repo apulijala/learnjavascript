@@ -1,6 +1,6 @@
 // setTimeout(() => {console.log("Tick")}, 15000);
 const {bigOak, defineRequestType, everywhere}  = require("./crow-tech");
-
+/*
 bigOak.readStorage("food caches",
         caches => {
             let firstCache = caches[0];           
@@ -46,24 +46,41 @@ new Promise((_, reject) => reject(new Error("Fail")))
   .then(value => console.log("Handler 2", value));
 // → Caught failure Error: Fail
 // → Handler 2 nothing
+*/
 
 class Timeout extends Error {}
 
 function request(nest, target, type, content) {
-   // nest.send(target,type, content, () => {console.log("Hello World")} );
+   nest.send(target,type, content, () => {console.log("Hello World")} );
 
+   
    return new Promise((resolve, reject) => {
         let done = false;
 
         function attempt(n) {
 
+                console.log("Note is " +type) ;
+                console.log("Datta");
+                nest.send(target, type, content, (failed, value) => {
+
+                    done = true;
+                    if (failed) reject(failed);
+                    else resolve(value);
+
+                });
+
+               
         }
 
+        attempt(1);
+        
 
    });
+   
+   
 }
 
-
+defineRequestType("note", ()=> {console.log("Note defined")});
  request(bigOak,"Cow Pasture", "note", "Let's caw loudly at 7PM");
 
 

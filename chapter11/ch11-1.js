@@ -58,9 +58,7 @@ function request(nest, target, type, content) {
         let done = false;
 
         function attempt(n) {
-
-                console.log("Note is " +type) ;
-                console.log("Datta");
+                
                 nest.send(target, type, content, (failed, value) => {
 
                     done = true;
@@ -79,11 +77,19 @@ function request(nest, target, type, content) {
    
    
 }
+defineRequestType("ping", () => "pong");
 
-defineRequestType("note", ()=> {console.log("Note defined")});
- request(bigOak,"Cow Pasture", "note", "Let's caw loudly at 7PM");
+function availableNeighbors(nest) {
+    let requests = nest.neighbors.map(neighbor => {
+      return request(nest, neighbor, "ping")
+        .then(() => true, () => false);
+    });
+    return Promise.all(requests).then(result => {
+      return nest.neighbors.filter((_, i) => result[i]);
+    });
+  }
 
-
+  console.log(availableNeighbors(bigOak));
 
 
 

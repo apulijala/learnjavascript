@@ -1,1 +1,22 @@
-eval \$'$1'
+total 112
+-rw------- 1 arvind arvind   536 Sep 25 18:12 bindings.js
+drwxr-xr-x 4 arvind arvind  4096 Oct  7 11:48 chapter10
+drwxr-xr-x 3 arvind arvind  4096 Oct  8 14:22 chapter11
+drwxr-xr-x 2 arvind arvind  4096 Oct  8 15:05 chapter20
+drwxr-xr-x 2 arvind arvind  4096 Sep 27 09:35 chapter3
+drwxr-xr-x 2 arvind arvind  4096 Sep 28 09:01 chapter4
+drwx------ 2 arvind arvind  4096 Sep 29 17:57 chapter5
+drwxr-xr-x 2 arvind arvind  4096 Oct  2 12:54 chapter5redo
+drwxr-xr-x 2 arvind arvind  4096 Oct  1 11:49 chapter6
+drwxr-xr-x 3 arvind arvind  4096 Oct  2 19:30 chapter6redo
+drwxr-xr-x 3 arvind arvind  4096 Oct  3 20:59 chapter8
+drwxr-xr-x 3 arvind arvind  4096 Oct  5 15:26 chapter9
+drwxr-xr-x 2 arvind arvind  4096 Oct  5 19:20 chapter9redo
+-rw------- 1 arvind arvind  1091 Sep 25 19:22 conditions.js
+-rw------- 1 arvind arvind   340 Sep 25 16:28 functions.js
+-rw------- 1 arvind arvind   897 Sep 25 17:43 hello.js
+-rw------- 1 arvind arvind 34399 Oct  8 21:21 javascriptnotes
+-rw-r--r-- 1 arvind arvind   371 Sep 26 20:51 javscriptcron
+-rw-r--r-- 1 arvind arvind  1121 Oct  8 23:16 result
+-rw-r--r-- 1 arvind arvind    73 Sep 30 13:41 setjsenv
+-rwxr-xr-x 1 arvind arvind     0 Oct  8 23:18 test

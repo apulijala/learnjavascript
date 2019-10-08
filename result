@@ -1,0 +1,21 @@
+total 108
+-rw------- 1 arvind arvind   536 Sep 25 18:12 bindings.js
+drwxr-xr-x 4 arvind arvind  4096 Oct  7 11:48 datta10
+drwxr-xr-x 3 arvind arvind  4096 Oct  8 14:22 datta11
+drwxr-xr-x 2 arvind arvind  4096 Oct  8 15:05 datta20
+drwxr-xr-x 2 arvind arvind  4096 Sep 27 09:35 datta3
+drwxr-xr-x 2 arvind arvind  4096 Sep 28 09:01 datta4
+drwx------ 2 arvind arvind  4096 Sep 29 17:57 datta5
+drwxr-xr-x 2 arvind arvind  4096 Oct  2 12:54 datta5redo
+drwxr-xr-x 2 arvind arvind  4096 Oct  1 11:49 datta6
+drwxr-xr-x 3 arvind arvind  4096 Oct  2 19:30 datta6redo
+drwxr-xr-x 3 arvind arvind  4096 Oct  3 20:59 datta8
+drwxr-xr-x 3 arvind arvind  4096 Oct  5 15:26 datta9
+drwxr-xr-x 2 arvind arvind  4096 Oct  5 19:20 datta9redo
+-rw------- 1 arvind arvind  1091 Sep 25 19:22 conditions.js
+-rw------- 1 arvind arvind   340 Sep 25 16:28 functions.js
+-rw------- 1 arvind arvind   897 Sep 25 17:43 hello.js
+-rw------- 1 arvind arvind 34399 Oct  8 21:21 javascriptnotes
+-rw-r--r-- 1 arvind arvind   371 Sep 26 20:51 javscriptcron
+-rw-r--r-- 1 arvind arvind    73 Sep 30 13:41 setjsenv
+-rwxr-xr-x 1 arvind arvind     0 Oct  8 23:04 test

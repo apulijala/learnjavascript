@@ -1,4 +1,4 @@
-const {bigOak, defineRequestType} = require("./crow-tech");
+const {bigOak, defineRequestType, everywhere} = require("./crow-tech");
 
 class Timeout extends Error {}
 
@@ -8,9 +8,8 @@ function request(nest, target, type, content) {
     function attempt(n) {
       nest.send(target, type, content, (failed, value) => {
         done = true;
-        console.log("failed is " + failed);
         if (failed) reject(failed);
-        else {console.log("value being returned is " + value);   resolve(value)};
+        else {   resolve(value)};
       });
       setTimeout(() => {
         if (done) return;
@@ -35,15 +34,59 @@ function requestType(name, handler) {
     });
   }
 
+  // Book's version
+  requestType("ping", () => "pong");
+
+// Function to get nest.
+// console.log(bigOak.neighbors);
+
+function availableNeighbors(nest) {
+    
+    let requests = nest.neighbors.map(neighbor => {
+      return request(nest, neighbor, "ping")
+        .then(() => true, () => false);
+    });
+    return Promise.all(requests).then(result => {
+        console.log("Result is " + result);
+      return nest.neighbors.filter((_, i) => {  
+          
+        console.log(_ +  " " + i + " " + result[i] );
+        return  result[i] 
+    }  ) ;
+    });
+  }
+
+bigOak.neighbors.push("Not Existing");
+console.log("All neighbours are " + bigOak.neighbors);
+
+let resultPromise = availableNeighbors(bigOak);
+resultPromise.then(
+    value => {console.log(value)}
+
+);
+
+everywhere((nest) => {
+
+  //  console.log(nest);
+
+})
+
+
+
+//  requestType("note",  ((nest, content, source, (failue, response) => {} ) ;
+
 /*
-defineRequestType("note", (nest, content, source, done ) => {
+
+requestType("note", (nest, content, source, done ) => {
     console.log(`${nest.name} received note: ${content} from ${source}`);
-    done();
+    // done();
 });
-*/
 
 let myPromise = request(bigOak, "Cow Pasture", "note", "Let's caw loudly at 7PM");
 myPromise.then(
     value => {console.log("Got after request ", value)}
 
 );
+*/
+
+

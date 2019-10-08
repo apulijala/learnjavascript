@@ -86,8 +86,6 @@
           handler(toNode, ser(message), this.name, (error, response) => {
              // why set a timeout.
             // setTimeout(() => callback(error, ser(response)), 10)
-            console.log("where is error comming from " + error);
-            console.log("where is response comming from " + response);
             callback(error, ser(response));
           })
         } catch(e) {

@@ -76,16 +76,26 @@
         return callback(new Error(`${to} is not reachable from ${this.name}`))
       let handler = this[$network].types[type]
       if (!handler)
-        return callback(new Error("Unknown request type " + type))
-      if (Math.random() > 0.03) setTimeout(() => {
+        return callback(new Error("Unknown request type " + type));
+      let randToPass = Math.random();
+      console.log("Random to pass " + randToPass);
+      handler(toNode, ser(message), this.name, (error, response) => {    
+        callback(error, ser(response));
+      })
+
+      /*
+      if (randToPass > 0.03) setTimeout(() => {
         try {
           handler(toNode, ser(message), this.name, (error, response) => {
-            setTimeout(() => callback(error, ser(response)), 10)
+            // why set a timeout.
+            // setTimeout(() => callback(error, ser(response)), 10)
+            callback(error, ser(response));
           })
         } catch(e) {
           callback(e)
         }
       }, 10 + Math.floor(Math.random() * 10))
+      */
     }
 
     readStorage(name, callback) {

@@ -13,19 +13,20 @@ function doWork(firstVal, resolve, reject) {
     return new Promise(function(resolve, reject) {
         // the function is executed automatically when the promise is constructed
       
+        console.log(firstVal);
         // after 1 second signal that the job is done with the result "done"
-       setTimeout(() => {console.log(firstVal)}, 1000);
-        resolve("nobody");
+       setTimeout(() => {resolve("nobody")}, 1000);
+        
        // setTimeout(() => reject(new Error("Whoops!")), 1000);
       })
 }
 
-doWork("This is the first value").then(
-).then(response => {console.log("This is success " + response)},
-      anything => {console.log("This is a failure")}
+let myPromise = doWork("This is the first value");
+myPromise.then(anything => {console.log("This is a failure"),
+    response => {console.log("This is success " + response)}
+      }
   
   );
-
 
 
 

@@ -1127,9 +1127,73 @@ If it encounter "dddd" should return days's getDay
 Chapter 11
 ----------
 
+#!/bin/bash
+BRANCH=$(git branch | grep '*'| sed 's/*//g'|  sed 's/ //g')
+DESCRIPTION=$(git config --get branch.${BRANCH}.description)
+if [ -z "$DESCRIPTION" ]; then
+  echo "No desc for branch using default template"
+else
+  # replacing # with n
+  DESCRIPTION=$(echo "$DESCRIPTION" | sed 's/#/\n/g')
+  # replacing the first \n with \n\n
+  DESCRIPTION=$(echo "$DESCRIPTION" | sed 's/\n/\n\n/')
+# append default commit message
+DESCRIPTION=$(echo "$DESCRIPTION" && cat $1)
+# and write it all to the commit message
+echo "$DESCRIPTION" > $1
+fi
+
+git diff --name-only v3.1.0.201310021548-r..HEAD
+org.eclipse.jgit.packaging/org.eclipse.jgit.target/jgit-4.3.target 
+org.eclipse.jgit.packaging/org.eclipse.jgit.target/jgit-4.4.target 
+org.eclipse.jgit.pgm.test/tst/org/eclipse/jgit/pgm/DescribeTest.java 
+org.eclipse.jgit.pgm.test/tst/org/eclipse/jgit/pgm/FetchTest.java 
+org.eclipse.jgit.pgm/src/org/eclipse/jgit/pgm/Describe.java 
+...
+How it works...
+The git diff command operates on the same revision range as git log did in the previous recipe. By specifying --name-only, Git will only give the paths of the files as output changed by the commits in the range specified.
+
+There's more...
+The output of the command can be further filtered; if we only want to show which files have been deleted in the repository since the last commit, we can use the --diff-filter switch with git diff:
+
+$ git diff --name-only --diff-filter=D  v3.1.0.201310021548-r..HEAD 
+
+org.eclipse.jgit.junit/src/org/eclipse/jgit/junit/SampleDataRepositoryTestCase.java 
+org.eclipse.jgit.packaging/org.eclipse.jgit.target/org.eclipse.jgit.target.target 
+org.eclipse.jgit.test/tst/org/eclipse/jgit/internal/storage/file/GCTest.java
+There are also switches for the files that have been added (A), copied (C), deleted (D), modified (M), renamed (R), and so on.
+
+See also
+For more information, visit the help page by running git help diff
+Create Bookmark (Key: b)
+Create Note or Tag (Key: t)
+Download (Key: d)
+Print
+Zoom Out (Key: -)
+Zoom In (Key: +)
+Toggle to Full Screen (Key: f)
+Previous (Key: p)
+Next (Key: n)
 
 
+#!/bin/bash
+COMMITS=$(git log --grep "nopush")
+if [ "$COMMITS" ]; then 
+  echo "You have commit(s) with nopush message"
+  echo "aborting push"
+  exit 1
+fi
 
+NGINX Cookbook
+
+Mastering Node.js
+Beginning Node.js
+
+
+https://recodes.co/being-blessed/
+https://github.com/hvmonteiro/blessed-examples
+https://badacadabra.github.io/Building-a-visual-form-in-your-terminal-emulator-with-Blessed/
+https://blog.nodejitsu.com/a-blessed-ui-for-jitsu/
 
 
 

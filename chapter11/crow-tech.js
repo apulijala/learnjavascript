@@ -78,16 +78,13 @@
       if (!handler)
         return callback(new Error("Unknown request type " + type));
       let randToPass = Math.random();
-      console.log("Random to pass " + randToPass);
-      handler(toNode, ser(message), this.name, (error, response) => {    
-        callback(error, ser(response));
-      })
+      let randomVar = 10 + Math.floor(Math.random() * 10);
 
-      /*
       if (randToPass > 0.03) setTimeout(() => {
         try {
+          // What is error, response for
           handler(toNode, ser(message), this.name, (error, response) => {
-            // why set a timeout.
+             // why set a timeout.
             // setTimeout(() => callback(error, ser(response)), 10)
             callback(error, ser(response));
           })
@@ -95,7 +92,7 @@
           callback(e)
         }
       }, 10 + Math.floor(Math.random() * 10))
-      */
+      
     }
 
     readStorage(name, callback) {

@@ -14,21 +14,19 @@ bigOak.readStorage("food caches", (caches) => {
 });
 */
 
-console.log("Defining the note type. When will the function get involved");
+console.log("Defining the note type. When will the function get involved. when send is invoked.");
 // whata are the values of nest, content, source and done.
 
-defineRequestType("note", (nest, content, source, done) => {
-    console.log(`${nest.name} received note: ${content} source : ${source}`);
+defineRequestType("note", (nest, content, source,done) => {
+    console.log(`${nest.name} received note: ${content} from ${source}`);
     done();
 });
 
-
-// send note. and verify that lambda above is invoked.
-/*
+// send note. and verify that lambda for defineRequestType is invoked.
 bigOak.send("Cow Pasture", "note", "Let's caw loudly at 7PM",
-            () => console.log("Note delivered."));
+            (error, response) => console.log(`Note delivered. with error ${error} ${response}` ));
 
-*/
+
 
 
 

@@ -1198,6 +1198,35 @@ https://blog.nodejitsu.com/a-blessed-ui-for-jitsu/
 Linux Shell Scripting Cookbook - Third Edition
 
 
+#!/bin/bash
+# Install the minion's keys
+mkdir -p /etc/salt/pki/minion
+echo '{{ vm['priv_key'] }}' > /etc/salt/pki/minion
+      /minion.pem
+echo '{{ vm['pub_key'] }}' > /etc/salt/pki/minion
+      /minion.pub
+# Write the minion's configuration file
+cat > /etc/salt/minion <<EOF
+{{minion}}
+EOF
+# Set up Ubuntu repositories
+echo deb http://ppa.launchpad.net/saltstack
+      /salt/ubuntu `lsb_release -sc` main | tee /etc/apt
+      /sources.list.d/saltstack.list
+wget -q -O- "http://keyserver.ubuntu.com:11371
+      /pks/lookup?op=get&search=0x4759FA960E27C0A6" | 
+      apt-key add -
+apt-get update
+# Install Salt
+apt-get install -y -o DPkg::Options::=--force-
+      confold salt-minion
+# No need to start services on Ubuntu; it will be 
+      done by apt
+
+
+
+
+
 
 
 

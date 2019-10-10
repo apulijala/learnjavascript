@@ -1257,6 +1257,7 @@ Longitude : -75.1631718
 https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyCRjJ1NOXKaCfcfX0Un1RHqDKQ-zEIbvQ4
 
 39.94440,-75.163136
+find . -path ./.git -prune -o -print
 
 
 52bf56335d5b47bbb93ac3ad94204906
@@ -1267,6 +1268,11 @@ https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Park
 
 
 http://www.mapquestapi.com/geocoding/v1/address?key=KEY&location=Washington,DC
+
+
+find repo/ \( -exec test -d '{}'/.svn \; -or \
+       -exec test -d {}/.git \; -or -exec test -d {}/CVS \; \) \
+       -print -prun
 
 
 

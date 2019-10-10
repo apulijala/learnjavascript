@@ -1233,9 +1233,21 @@ AIzaSyCRjJ1NOXKaCfcfX0Un1RHqDKQ-zEIbvQ4
 
 Failure scenario.
 node app.js --address 'abbbbdddd'
+http://www.mapquestapi.com/geocoding/v1/address?key=VYLcbhV3QQDnBESXT7tkdrf0O6ne4SSd&location=abbbbdddd
 
 Success scenario.
 node app.js --address '1301 lombard street philadelphia'
+http://www.mapquestapi.com/geocoding/v1/address?key=VYLcbhV3QQDnBESXT7tkdrf0O6ne4SSd&location=1301 lombard street philadelphia
+
+https://api.darksky.net/forecast/022c2a80569f7ca11244b634457b10f4/37.8267,-122.4233
+
+invalid status
+{"code":400,"error":"Poorly formatted request"}
+
+
+https://api.darksky.net/forecast/022c2a80569f7ca11244b634457b10f4/37.8267,-122.4233
+
+
 
 1301 lombard street, Philadelphia, PA 19147, USA.
 Latitude : 39.9444071
@@ -1243,6 +1255,8 @@ Longitude : -75.1631718
 
 
 https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyCRjJ1NOXKaCfcfX0Un1RHqDKQ-zEIbvQ4
+
+39.94440,-75.163136
 
 
 52bf56335d5b47bbb93ac3ad94204906
@@ -1254,7 +1268,7 @@ https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Park
 
 http://www.mapquestapi.com/geocoding/v1/address?key=KEY&location=Washington,DC
 
-http://www.mapquestapi.com/geocoding/v1/address?key=VYLcbhV3QQDnBESXT7tkdrf0O6ne4SSd&location=1301 lombard street philadelphia
+
 
 
 

@@ -1261,10 +1261,7 @@ find . -path ./.git -prune -o -print
 
 
 52bf56335d5b47bbb93ac3ad94204906
-
-
-
-	VYLcbhV3QQDnBESXT7tkdrf0O6ne4SSd
+VYLcbhV3QQDnBESXT7tkdrf0O6ne4SSd
 
 
 http://www.mapquestapi.com/geocoding/v1/address?key=KEY&location=Washington,DC
@@ -1276,20 +1273,8 @@ find repo/ \( -exec test -d '{}'/.svn \; -or \
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Python for DevOps
+DevOps in Python: Infrastructure as Python
 
 
 

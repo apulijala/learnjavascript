@@ -1277,6 +1277,34 @@ Python for DevOps
 DevOps in Python: Infrastructure as Python
 
 
+var something = require('../something/index');
+
+console.log(console === global.console);       // true
+console.log(setTimeout === global.setTimeout); // true
+console.log(process === global.process);       // true
+
+// Add something to global
+require('./addToGlobal');
+console.log(something); // 123
+
+
+var path = require('path');
+
+// Fixes up .. and .
+// logs on Unix: /foo
+// logs on Windows: \foo
+console.log(path.normalize('/foo/bar/..'));
+
+// Also removes duplicate '//' slashes
+// logs on Unix: /foo/bar
+// logs on Windows: \foo\bar
+console.log(path.normalize('/foo//bar/bas/..'));
+
+
+Terraform: Up & Running, 2nd Edition
+Mastering AWS Lambda
+
+
 
 
 

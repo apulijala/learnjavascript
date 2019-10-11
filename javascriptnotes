@@ -1304,6 +1304,153 @@ console.log(path.normalize('/foo//bar/bas/..'));
 Terraform: Up & Running, 2nd Edition
 Mastering AWS Lambda
 
+var fs = require('fs');
+
+// write
+fs.writeFileSync('test.txt', 'Hello fs!');
+
+// read
+console.log(fs.readFileSync('test.txt').toString());
+One of the great things about the fs
+
+process.nextTick(function () {
+    console.log('next tick');
+});
+console.log('immediate');
+
+// read
+console.log(fs.readFileSync('test.txt').toString());
+One
+
+/home/ryo/project/foo.js has a require call require('bar')
+
+
+/home/ryo/project/node_modules/bar.js
+/home/ryo/node_modules/bar.js
+/home/node_modules/bar.js
+/node_modules/bar.js
+In 
+
+
+projectroot
+   |-- node_modules/foo/fooV1Files
+   |-- moduleA/moduleAFiles
+   |-- moduleB/moduleBFiles
+   |-- moduleC/moduleCFiles
+
+
+
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "A project for testing proper install of json modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arvind K. Pulijala",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.9.1"
+  }
+}
+
+
+
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arvind K. PUlijala",
+  "license": "ISC"
+}
+
+
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arvind K. PUlijala",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.9.1"
+  }
+}
+
+ 
+{
+  "name": "project",
+  "version": "1.0.0",
+  "lockfileVersion": 1,
+  "requires": true,
+  "dependencies": {
+    "underscore": {
+      "version": "1.9.1",
+      "resolved": "https://registry.npmjs.org/underscore/-/underscore-1.9.1.tgz",
+      "integrity": "sha512-5/4etnCkd9c8gwgowi5/om/mYO5ajCaOgdzj/oW+0eQV9WxKBDZw5+ycmKmeaTXjInS/W0BzpGLo2xR2aBwZdg=="
+    }
+  }
+}
+
+// "Sunday, February 14th 2010, 3:25:50 pm"
+console.log(wrapped.format('"dddd, MMMM Do YYYY, h:mm:ss a"'));
+
+console.log(wrapped.format("ddd, hA"));
+
+
+console.log('world!'.red);                        // outputs red text
+console.log('Feeling yellow'.yellow);  
+
+
+
+user id : apulijala75
+Password : Dattatreya2
+Secure Number: 534553
+
+Beginning Amazon Web Services with Node.jsAdd to Favorites (Key: a)
+
+Hashicorp tools
+https://www.youtube.com/watch?v=9Wl1b3LNTEc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

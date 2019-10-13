@@ -1,15 +1,37 @@
 # To unbundle, bash this file
+
+allFiles=($@)
+echo ${allFiles[@]}
+
+function checkFile () {
+	if [ ${#allFiles[@]} == 0 ] 
+	then
+		unbundle=0
+		echo "unbundle in if is $unbundle"
+	fi
+
+	for file in ${allFiles[@]}
+	do
+		echo "myfile is $file"
+	done
+
+	unbundle=1
+
+}
+
+
+checkFile "file1"
+echo "unbundle is $unbundle"
+if [ "$unbundle" -eq 0 ] 
+then
 echo file1 1>&2
 cat >file1 <<'End of file1'
 End of file1
+fi
 
 echo file2 1>&2
 cat >file2 <<'End of file2'
 End of file2
-
-function checkFile () {
-	echo $*
-}
 
 
 

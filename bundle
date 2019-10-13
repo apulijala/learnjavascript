@@ -1,11 +1,35 @@
 #!/bin/bash
 # bundle:  group files into distribution package
+cat <<"func"
+allFiles=($@)
+function checkFile () {
+        unbundle=1
+        if [ ${#allFiles[@]} == 0 ]
+        then
+                unbundle=0
+                return
+        fi
+        for file in ${allFiles[@]}
+        do
+                if [ "$file" ==  "$1" ]
+                then
+                        echo "myfile is $file"
+                        return
+                fi
+        done 
+}
+func
 
-echo "# To unbundle, bash this file"
+
+echo "# To unbundle, bash this file, To unbundle selectively, Pelase  supply them as arguments. Otherwise everything  will be unbundled"
 for i
-do
+do 
+    echo "checkFile \"$i\""
+    echo "if [ \"\$unbundle\" -eq 0 ]"
+    echo "then"	
     echo "echo $i 1>&2"
     echo "cat >$i <<'End of $i'"
     cat $i
     echo "End of $i"
+    echo "fi"
 done

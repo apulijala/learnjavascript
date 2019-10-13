@@ -10,7 +10,7 @@ function checkFile () {
         do
                 if [ "$file" ==  "$1" ]
                 then
-                        echo "myfile is $file"
+                	unbundle=0
                         return
                 fi
         done 

@@ -1,8 +1,7 @@
 landscape = function() {
-result = "b";
+result = "";
 
 flat = function(size) {
-    var result = "a"
     for (var num = 0; num < size; num++) {
         result += "_";
     }
